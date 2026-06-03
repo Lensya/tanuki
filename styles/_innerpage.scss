@@ -1,0 +1,407 @@
+.innerpage {
+    background-color: #fff;
+    border-radius: 16px;
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 32px;
+
+    @media (max-width: 767px) {
+        padding: 32px 16px;
+    }
+
+    @media (max-width: 1279px) and (min-width: 768px) {
+        padding: 32px 24px;
+    }
+
+    @media (min-width: 1280px) {
+        padding: 32px;
+    }
+
+    // .single-article {
+    //     margin-bottom: 0;
+    // }
+}
+
+// contact page
+
+.contacts {
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px 16px;
+
+        @media (max-width: 767px) {
+            grid-template-columns: 100%;
+        }
+
+        &.contacts__row-bottom {
+
+            @media (max-width: 1279px) and (min-width: 768px) {
+                grid-template-columns: 1.5fr 2fr;
+            }
+
+            @media (min-width: 1280px) {
+                grid-template-columns: 1fr 1.5fr 0.5fr;
+            }
+
+
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+
+        @media (max-width: 767px) {
+            row-gap: 8px;
+        }
+    }
+
+    &__title {
+        color: $textPrimary;
+        font-weight: 600;
+    }
+
+}
+
+.our-contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    &__title {
+        h1 {
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contacts-map {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+// about page
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    p {
+        margin-bottom: 0;
+        color: $textPrimary;
+    }
+}
+
+.about-contacts,
+.profile-company,
+.terms-cooperation {
+    h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.about-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: $textPrimary;
+
+    @media (max-width: 767px) {
+        row-gap: 8px;
+    }
+
+    >div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        padding: 16px;
+        border-radius: 16px;
+        background: $baseBackground;
+        column-gap: 12px;
+
+        @media (max-width: 767px) {
+            grid-template-columns: 100%;
+            row-gap: 4px;
+
+            dt {
+                font-weight: 600;
+            }
+        }
+
+        &.commission {
+            @media (max-width: 767px) {
+
+                >dt {
+                    font-weight: 400;
+                }
+            }
+
+            dd {
+                gap: 12px;
+            }
+        }
+    }
+
+    dd {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    a {
+        color: $textInfo;
+    }
+
+    .commission-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        column-gap: 12px;
+
+        @media (max-width: 767px) {
+            grid-template-columns: 100%;
+            row-gap: 4px;
+
+            span:first-child {
+                font-weight: 600;
+            }
+        }
+
+        a {
+            color: $textPrimary;
+        }
+    }
+
+    &__note {
+        padding: 16px;
+        color: $textPrimary;
+    }
+
+}
+
+// стоимость
+
+.cost-block {
+
+    &__title {
+        font-size: 20px;
+        color: $textPrimary;
+        margin-bottom: 12px;
+    }
+
+    .cost-table {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        color: $textPrimary;
+
+        @media (max-width: 767px) {
+            row-gap: 8px;
+        }
+    }
+
+    .cost-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        padding: 16px;
+        border-radius: 16px;
+        background: $baseBackground;
+        column-gap: 12px;
+
+
+        @media (max-width: 767px) {
+            grid-template-columns: 100%;
+            row-gap: 12px;
+        }
+
+        &__service {
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+
+        }
+
+        &__price {
+            @media (max-width: 767px) {
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+.cost-info {
+
+    h3 {
+        font-size: 20px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    ul li {
+        line-height: 24px;
+        color: $textPrimary;
+        padding: 0 0 0 16px;
+        line-height: 24px;
+        margin: 8px 0;
+
+        &::before {
+            top: 10px;
+        }
+    }
+
+    p {
+        line-height: 24px;
+        color: $textPrimary;
+    }
+
+}
+
+// delivery
+
+.delivery-cards {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 991px) {
+        grid-template-columns: 100%;
+    }
+
+}
+
+.delivery-card {
+    border-radius: 16px;
+    background: $baseBackground;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    h2 {
+        font-size: 24px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+
+            dd {
+                font-weight: 600;
+                color: $textPrimary;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    &__desc {
+        color: $textPrimary;
+    }
+
+    &__price {
+        display: flex;
+        align-items: baseline;
+        margin-top: auto;
+
+        .price {
+            font-size: 32px;
+            color: $brandColor;
+            @media (max-width: 991px) {
+                font-size: 24px;
+            }
+        }
+
+        span {
+            font-size: 20px;
+            color: $textHint;
+            font-weight: 600;
+        }
+    }
+
+    &__note {
+        border-radius: 12px;
+        background-color: rgba(255, 190, 92, 0.30);
+        padding: 16px;
+        font-size: 14px;
+        align-items: flex-start;
+        color: $textPrimary;
+        display: flex;
+        column-gap: 8px;
+
+        p {
+            margin-bottom: 0;
+        }
+        img {
+            flex-shrink: 0;
+        }
+    }
+}
+
+.delivery-info-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    @media (max-width: 991px) {
+        grid-template-columns: 100%;
+    }
+}
+
+.delivery-info-col {
+    h3 {
+        line-height: 1;
+        margin-bottom: 16px;
+        .delivery-info-sub {
+            font-size: 16px;
+            font-weight: 400;
+            color: $textSecondary;
+        }
+    }
+
+    ul {
+        color: $textPrimary;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        a {
+            color: $textInfo;
+        }
+    }
+}
+
+.shipping-calculator__row {
+   
+        display: grid;
+        gap: 16px;
+
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    
+}

@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tanukishop</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth">
+    <div class="container">
+
+        <header class="header">
+            <div class="header__first-row tablet-none">
+                <div class="d-flex">
+                    <nav class="top-menu">
+                        <ul>
+                            <li><a href="#" class="top-menu__item">О компании</a></li>
+                            <li><a href="#" class="top-menu__item">Стоимость</a></li>
+                            <li><a href="#" class="top-menu__item">Доставка</a></li>
+                            <li><a href="#" class="top-menu__item">Контакты</a></li>
+                            <li><a href="#" class="top-menu__item-highlighted">Авто из Японии</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-bar">
+                        <div class="top-bar__time time-msk">
+                            <b>10:00</b> в Москве
+                        </div>
+                        <div class="top-bar__time time-jpn">
+                            <b>10:00</b> в Японии
+                        </div>
+                        <div class="wallet">
+                            Кошелек
+                            <div class="wallet__balance">10,300 RUB</div>
+                        </div>
+                        <div class="exch-rate">
+                            <span>1$ = 144.78¥</span>
+                            <span>100¥ = 68.75Р</span>
+                        </div>
+                        <div class="d-flex top-bar__dropdowns">
+                            <div class="currency dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>₽ RUB</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-currency">
+                                    <ul>
+                                        <li><a href="#">¥ JPY</a></li>
+                                        <li class="current"><a href="#">₽ RUB</a></li>
+                                        <li><a href="#">$ USD</a></li>
+                                        <li><a href="#">元 CNY</a></li>
+                                        <li><a href="#">€ EUR</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="language dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>RU</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-language">
+                                    <ul>
+                                        <li class="current"><a href="#">
+                                                <span>Russian</span>
+                                                <span>Русский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>English</span>
+                                                <span>Английский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>Chinese</span>
+                                                <span>中文</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__second-row">
+                <div class="d-flex">
+                    <a href="#" class="logo">
+                        <img src="img/Tanuki.svg" alt="">
+                        <img src="img/tanuki-title.svg" alt="" class="tablet-none">
+                    </a>
+                    <div class="search-row">
+                        <div class="select-store dropdown tablet-none">
+                            <a href="#" class="btn header-btn dropdown-toggle"><span class="select-store__title">Y!
+                                    Auctions</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-store">
+                                <ul>
+                                    <li class="current"><a href="#">Y! Auctions</a></li>
+                                    <li><a href="#">Y! Shopping</a></li>
+                                    <li><a href="#">Racuten</a></li>
+                                    <li><a href="#">Croooober</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-category tablet-none">
+                            <a href="#" class="btn light-btn js-select-category">
+                                <span class="select-category__title">Все категории</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="select-cats-modal">
+                                <div class="select-cats-modal__header">
+                                    <div class="select-cats-modal__header-title">Выберите категорию для поиска</div>
+                                    <button class="select-cats-modal__header-close">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="select-cats-modal__body">
+                                    <ul class="select-cats-modal__list">
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#search"></use>
+                                            </svg><span>Все категории</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#bit-tech"></use>
+                                            </svg><span>Бытовая техника</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#fanats"></use>
+                                            </svg><span>Товары для фанатов</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#beauty"></use>
+                                            </svg><span>Красота и здоровье</span>
+                                        </li>
+
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#gardening"></use>
+                                            </svg><span>Садоводство</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#games"></use>
+                                            </svg><span>Игры и игрушки</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#sport"></use>
+                                            </svg><span>Спорт и отдых</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#hobby"></use>
+                                            </svg><span>Хобби и увлечения</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="search-form">
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="tablet-only">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                            <input type="text" name="search"
+                                placeholder="Модель кузова, поисковое слово или номер лота">
+                            <button class="btn header-btn tablet-none">
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#search"></use>
+                                </svg>
+                                <span>Найти</span></button>
+                        </form>
+                    </div>
+                    <div class="mobile-menu__trigger tablet-only">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#burger"></use>
+                        </svg>
+                    </div>
+                    <div class="header-btns">
+                        <a href="#" class="header-btns__item">
+                            <svg viewBox="0 0 25 24" width="25" height="24">
+                                <use href="sprite.svg#support"></use>
+                            </svg>
+                            <span>Поддержка</span>
+                        </a>
+                        <div class="header-btns__item header-btns__notes">
+                            <div class="notes-btn">
+                                <div class="header-btns__icon">
+                                    <svg viewBox="0 0 25 24" width="25" height="24">
+                                        <use href="/sprite.svg#notes"></use>
+                                    </svg>
+                                    <span>5</span>
+                                </div>
+                                <span>Уведомления</span>
+                            </div>
+
+                            <div class="notes-tooltip">
+                                <div class="notes-title">
+                                    <strong>Уведомления <span>(5)</span></strong>
+                                    <button class="notes-close tablet-only">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="notes-body">
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="header-btns__item header-btns__profile">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="sprite.svg#profile"></use>
+                            </svg>
+                            <span>Профиль</span>
+                        </a>
+                        <a href="#" class="header-btns__item">
+                            <div class="header-btns__icon">
+                                <svg viewBox="0 0 25 24" width="25" height="24">
+                                    <use href="/sprite.svg#cart"></use>
+                                </svg>
+                                <span>20</span>
+                            </div>
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                    <a href="#" class="btn header-btn login-btn tablet-none">Войти</a>
+                </div>
+                <div class="modal-header-overlay"></div>
+            </div>
+            <div class="header__third-row tablet-none">
+                <div class="d-flex">
+                    <nav class="cats-menu">
+                        <ul class="menu">
+                            <li class="has-child"><a href="#" class="menu__item">Автозапчасти</a>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                                <ul class="submenu">
+                                    <li><a href="#" class="menu__item">Поиск на аукционе</a></li>
+                                    <li><a href="#" class="menu__item">Заказ новых запчастей</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu__item">Шины и диски</a></li>
+                            <li><a href="#" class="menu__item">Мототехника</a></li>
+                            <li class="menu__item menu__item--more">
+                                <span class="menu-more-title">Еще</span>
+                                <ul class="mobile-submenu menu">
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Спорт и отдых</a>
+                                    </li>
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Аниме товары</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="#" class="menu__item">Спорт и отдых</a></li>
+                            <li><a href="#" class="menu__item">Аниме товары</a></li> -->
+                        </ul>
+                    </nav>
+                    <nav class="stores-menu">
+                        <ul class="menu">
+                            <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                            <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                            <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                            <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                            <li><a href="#" class="menu__item">Другие магазины</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-menu tablet-only">
+                <div class="mobile-menu__head">
+                    <a href="#" class="mobile-menu__logo">
+                        <img src="img/Tanuki.svg" alt="">
+                    </a>
+                    <a href="#" class="mobile-menu__user">
+                        <img src="img/ava.svg" alt="" class="mobile-menu__avatar">
+                        <span class="mobile-menu__name">Константин</span>
+                    </a>
+                    <a href="#" class="btn header-btn login-btn">Войти</a>
+                    <button class="mobile-menu__close">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="">
+                    <ul class="">
+                        <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                        <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                        <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                        <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                        <li><a href="#" class="menu__item">Другие магазины</a></li>
+                    </ul>
+                </nav>
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="menu__item">О компании</a></li>
+                        <li><a href="#" class="menu__item">Стоимость</a></li>
+                        <li><a href="#" class="menu__item">Доставка</a></li>
+                        <li><a href="#" class="menu__item">Контакты</a></li>
+                        <li><a href="#" class="menu__item menu__item-highlighted">Авто из Японии</a></li>
+                        <li><a href="#" class="menu__item">Поддержка</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__bottom">
+                    <div class="exch-rate">
+                        <span>1$ = 144.78¥</span>
+                        <span>100¥ = 68.75Р</span>
+                    </div>
+                    <div class="wallet">
+                        <strong>Кошелек</strong>
+                        <div class="wallet__balance">10,300 RUB</div>
+                    </div>
+                    <div class="mobile-menu__language">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Язык</strong>
+                            <span>Русский</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Язык</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li class="current"><a href="#">Russian (Русский)</a></li>
+                                <li><a href="#">English (English)</a></li>
+                                <li><a href="#">Chinese (中文)</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu__currency">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Валюта</strong>
+                            <span>RUB</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Валюта</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li><a href="#">¥ JPY</a></li>
+                                <li class="current"><a href="#">₽ RUB</a></li>
+                                <li><a href="#">$ USD</a></li>
+                                <li><a href="#">元 CNY</a></li>
+                                <li><a href="#">€ EUR</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__overlay"></div>
+            </div>
+        </header>
+
+        <main class="catalog-page">
+
+            <section class="autoparts">
+
+                <div class="search-autoparts">
+                    <div class="search-autoparts__title">
+                        <h1>Поиск автозапчастей</h1>
+                        <a href="#" class="search-autoparts__hint" data-modal-open="autoparts-hint-modal">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#info"></use>
+                            </svg>
+                            <span>Как пользоваться быстрым поиском</span>
+                        </a>
+                    </div>
+
+                    <div class="modal autoparts-hint-modal" id="autoparts-hint-modal">
+                        <div class="modal__header">
+                            <strong>Как пользоваться быстрым поиском</strong>
+                            <button class="modal__close" data-modal-close>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="autoparts-hint-modal__body">
+                            <div class="d-flex">
+                                <div>
+                                    <h5>1й способ: Поиск по производителю и модели</h5>
+                                    <ol>
+                                        <li>Выберите <strong>производителя (марку)</strong> вашего транспортного
+                                            средства.</li>
+                                        <li> Выберите <strong>модель</strong>.</li>
+                                        <li>Нажмите кнопку <strong>«Найти запчасть»</strong> — система покажет все
+                                            доступные товары для выбранной модели</li>
+                                        <li>Либо сразу выберите нужную <strong>запчасть</strong> из списка и нажмите
+                                            на неё.</li>
+                                    </ol>
+                                    <p>Этот способ поиска выдаёт наиболее полный результат.</p>
+                                </div>
+                                <div>
+                                    <h5>2й способ: Поиск с уточнением по кузову</h5>
+                                    <ol>
+                                        <li>Если при использовании 1-го способа отобразилось <strong>слишком много
+                                                вариантов</strong>, введите в поле дополнительного параметра
+                                            короткий номер кузова,
+                                            например: <span>AZT240</span>
+                                        </li>
+                                        <li>Если запчасть используется на нескольких кузовах одной модели, укажите
+                                            их через пробел, например: <span>AZT240 NZT240 ZZT240 ZZT245</span></li>
+                                        <li>Нажмите кнопку <strong>«Найти запчасть»</strong> — система отобразит
+                                            товары,
+                                            соответствующие уточнённым параметрам.</li>
+                                        <li>Или выберите нужную <strong>запчасть</strong> из предложенного списка и
+                                            нажмите на неё.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <p>Пожелания по добавлению названий моделей и запчастей просьба направлять <a
+                                    href="#">сообщением</a> менеджеру.</p>
+                            <div class="contact-row">
+                                <div>
+                                    <span>Центр поддержки клиентов</span>
+                                    <div>
+                                        <span class="time">9:00 – 18:00</span><br>
+                                        <small>время по Японии</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>Только для сообщений</span>
+                                    <div class="modal-telegram">
+                                        <img src="img/telegram.svg" alt="">
+                                        <div>
+                                            <a href="#">+81 80-4380-1212</a><br>
+                                            <small>вопросы обработки посылок, отправок</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__footer">
+                            <button class="btn-clear" type="reset" data-modal-close>Отмена</button>
+                            <button class="btn brand-btn" data-modal-close>Выбрать</button>
+                        </div>
+                    </div>
+
+                    <form action="" class="search-autoparts__form">
+                        <div class="search-autoparts__field">
+                            <label>Производитель</label>
+                            <select name="mark">
+                                <option selected="selected" value="">Все производители</option>
+                                <option value="1">TOYOTA</option>
+                                <option value="2">NISSAN</option>
+                                <option value="3">MITSUBISHI</option>
+                                <option value="4">MAZDA</option>
+                                <option value="5">HONDA</option>
+                                <option value="6">ISUZU</option>
+                                <option value="7">DAIHATSU</option>
+                                <option value="8">SUBARU</option>
+                                <option value="9">SUZUKI</option>
+                                <option value="10">HINO</option>
+                                <option value="11">NISSAN DIESEL</option>
+                                <option value="12">FUSO</option>
+                                <option value="13">FORD JAPAN</option>
+                                <option value="14">ISUZU TRUCK</option>
+                                <option value="15">CHEVROLET</option>
+                                <option value="16">LEXUS</option>
+                                <option value="17">BMW</option>
+                                <option value="18">MERSEDES BENZ</option>
+                            </select>
+                        </div>
+                        <div class="search-autoparts__field">
+                            <label>Модель</label>
+                            <select name="model">
+                                <option selected="selected" value="">Все модели</option>
+                                <option value="86">86</option>
+                                <option value="アレックス">ALLEX</option>
+                                <option value="アリオン">ALLION</option>
+                                <option value="アルファード">ALPHARD</option>
+                                <option value="アルテッツァ">ALTEZZA</option>
+                                <option value="アルテッツァジータ">ALTEZZA GITA</option>
+                                <option value="アクア">AQUA</option>
+                                <option value="アリスト">ARISTO</option>
+                                <option value="オーリス">AURIS</option>
+                                <option value="アバロン">AVALON</option>
+                                <option value="アベンシス">AVENSIS</option>
+                                <option value="bB">bB</option>
+                                <option value="ベルタ">BELTA</option>
+                                <option value="ブレイド">BLADE</option>
+                                <option value="ブレビス">BREVIS</option>
+                                <option value="カルディナ">CALDINA</option>
+                                <option value="キャミ">CAMI</option>
+                                <option value="カムリ">CAMRY</option>
+                                <option value="グラシア">CAMRY GRACIA</option>
+                                <option value="カリーナ">CARINA</option>
+                                <option value="カリーナＥＤ">CARINA ED</option>
+                                <option value="セリカ">CELICA</option>
+                                <option value="セルシオ">CELSIOR</option>
+                                <option value="センチュリー">CENTURY</option>
+                                <option value="チェイサー">CHASER</option>
+                                <option value="コースター">COASTER</option>
+                                <option value="コンフォート">COMFORT</option>
+                            </select>
+                        </div>
+                        <div class="search-autoparts__field">
+                            <label>Модель кузова <span class="hide-label">автомобиля</span></label>
+                            <input type="text" placeholder="Не выбрано">
+                        </div>
+                        <div class="search-autoparts__field">
+                            <label>По состоянию</label>
+                            <select name="status">
+                                <option selected="selected" value="">Все категории</option>
+                                <option value="1">Новые</option>
+                                <option value="2">Товар б/у</option>
+                            </select>
+                        </div>
+                        <div class="search-autoparts__btns">
+                            <button class="btn-clear" type="reset">Очистить</button>
+                            <button class="btn main-btn">Найти запчасть</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="order-spare-parts">
+                    <div class="order-spare-parts__title">
+                        <h4>Заказ новых запчастей</h4>
+                        <p>В данном разделе вы можете заказать новые оригинальные запчасти для японских автомобилей</p>
+                    </div>
+                    <form action="" class="new-autoparts__form">
+                        <div class="d-flex">
+                            <input type="text" id="oem-enter" placeholder="Введите ОЕМ номер запчасти">
+                            <button class="btn main-btn" data-modal-open="autoparts-new-modal">Найти запчасть</button>
+                        </div>
+                    </form>
+                    <div class="modal autoparts-hint-modal" id="autoparts-new-modal">
+                        <div class="modal__header">
+                            <strong>Заказ новых запчастей</strong>
+                            <button class="modal__close" data-modal-close>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="autoparts-hint-modal__body autoparts-new">
+                            <p>В данном разделе вы можете заказать новые оригинальные запчасти для японских автомобилей.</p>
+                            <form action="" class="new-autoparts__form">
+                                <div class="d-flex">
+                                    <div class="search-autoparts__field">
+                                        <label>Производитель</label>
+                                        <select name="mark">
+                                            <option selected="selected" value="">Все производители</option>
+                                            <option value="1">TOYOTA</option>
+                                            <option value="2">NISSAN</option>
+                                            <option value="3">MITSUBISHI</option>
+                                            <option value="4">MAZDA</option>
+                                            <option value="5">HONDA</option>
+                                            <option value="6">ISUZU</option>
+                                            <option value="7">DAIHATSU</option>
+                                            <option value="8">SUBARU</option>
+                                            <option value="9">SUZUKI</option>
+                                            <option value="10">HINO</option>
+                                            <option value="11">NISSAN DIESEL</option>
+                                            <option value="12">FUSO</option>
+                                            <option value="13">FORD JAPAN</option>
+                                            <option value="14">ISUZU TRUCK</option>
+                                            <option value="15">CHEVROLET</option>
+                                            <option value="16">LEXUS</option>
+                                            <option value="17">BMW</option>
+                                            <option value="18">MERSEDES BENZ</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-autoparts__field">
+                                        <label>OEM номер запчасти</label>
+                                        <input type="text" id="oem" placeholder="Не выбрано">
+                                    </div>
+                                    <div class="search-autoparts__field">
+                                        <label>Цена, ¥</label>
+                                        <input type="text" placeholder="Введите значение">
+                                    </div>
+                                    <div class="search-autoparts__field">
+                                        <label>Количество</label>
+                                        <input type="text" placeholder="Введите значение">
+                                    </div>
+                                </div>
+                                <div class="account-form__footer">
+                                    <button class="btn-clear" type="reset">Очистить</button>
+                                    <button class="btn brand-btn">Добавить в корзину</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs autoparts__tabs">
+                    <nav class="autoparts__nav">
+                        <ul class="tabs-nav">
+                            <li class="tabs-nav__item active" data-tab="tab1">
+                                <button class="btn">Внешние детали кузова</button>
+                            </li>
+                            <li class="tabs-nav__item " data-tab="tab2">
+                                <button class="btn">Двигатель и его части</button>
+                            </li>
+                            <li class="tabs-nav__item" data-tab="tab3">
+                                <button class="btn">Подвеска</button>
+                            </li>
+                            <li class="tabs-nav__item" data-tab="tab4">
+                                <button class="btn">Детали салона</button>
+                            </li>
+                            <li class="tabs-nav__item" data-tab="tab5">
+                                <button class="btn">Трансмиссия и ее части</button>
+                            </li>
+                            <li class="tabs-nav__item" data-tab="tab6">
+                                <button class="btn">Ходовая часть</button>
+                            </li>
+                            <li class="tabs-nav__item" data-tab="tab7">
+                                <button class="btn">Электрика</button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="tabs-content">
+                        <div class="tabs-content__item active" data-tab-content="tab1">
+                            <ul class="autoparts__list">
+                                <li><a href="#">амортизаторы капота</a></li>
+                                <li><a href="#">багажник крыши </a></li>
+                                <li><a href="#">балка </a></li>
+                                <li><a href="#">бампер задний </a></li>
+                                <li><a href="#">бампер передний </a></li>
+                                <li><a href="#">брызговик </a></li>
+                                <li><a href="#">воздуховод </a></li>
+                                <li><a href="#">дверь задняя (5ая) </a></li>
+                                <li><a href="#">демпфер задний </a></li>
+                                <li><a href="#">защелка двери </a></li>
+                                <li><a href="#">защита </a></li>
+                                <li><a href="#">защита двигателя </a></li>
+                                <li><a href="#">защита нижняя </a></li>
+                                <li><a href="#">зеркало </a></li>
+                                <li><a href="#">зеркало боковое </a></li>
+                                <li><a href="#">зеркало вспомогательное </a></li>
+                                <li><a href="#">зеркало двери </a></li>
+                                <li><a href="#">зеркало на крыле </a></li>
+                                <li><a href="#">кожух верхняя часть </a></li>
+                                <li><a href="#">крепление запасного колеса </a></li>
+                                <li><a href="#">крыло </a></li>
+                                <li><a href="#">крышка багажника </a></li>
+                                <li><a href="#">крышка топливного бака </a></li>
+                                <li><a href="#">ободок фары </a></li>
+                                <li><a href="#">панель боковая </a></li>
+                                <li><a href="#">панель задняя </a></li>
+                                <li><a href="#">петля двери </a></li>
+                                <li><a href="#">пластик </a></li>
+                                <li><a href="#">поддержка радиатора, телевизор </a></li>
+                                <li><a href="#">подкрылок </a></li>
+                                <li><a href="#">подножка </a></li>
+                                <li><a href="#">порог </a></li>
+                                <li><a href="#">рейлинг крыши </a></li>
+                                <li><a href="#">решетка </a></li>
+                                <li><a href="#">решетка радиатора </a></li>
+                                <li><a href="#">ручка двери наружная </a></li>
+                                <li><a href="#">спойлер бампера </a></li>
+                                <li><a href="#">спойлер нижний </a></li>
+                                <li><a href="#">стекло </a></li>
+                                <li><a href="#">стекло двери </a></li>
+                                <li><a href="#">стекло люка </a></li>
+                                <li><a href="#">стекло форточки </a></li>
+                                <li><a href="#">фендер </a></li>
+                                <li><a href="#">чехол запасного колеса </a></li>
+                            </ul>
+                            <span class="show-more">
+                                <span>Показать все</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="tabs-content__item" data-tab-content="tab2">
+                            <ul class="autoparts__list">
+                                <li><a href="#">багажник крыши </a></li>
+                                <li><a href="#">балка </a></li>
+                                <li><a href="#">бампер задний </a></li>
+                                <li><a href="#">бампер передний </a></li>
+                                <li><a href="#">брызговик </a></li>
+                                <li><a href="#">воздуховод </a></li>
+                                <li><a href="#">дверь задняя (5ая) </a></li>
+                                <li><a href="#">демпфер задний </a></li>
+                                <li><a href="#">защелка двери </a></li>
+                                <li><a href="#">защита </a></li>
+                                <li><a href="#">защита двигателя </a></li>
+                                <li><a href="#">защита нижняя </a></li>
+                                <li><a href="#">зеркало </a></li>
+                                <li><a href="#">зеркало боковое </a></li>
+                                <li><a href="#">зеркало вспомогательное </a></li>
+                                <li><a href="#">зеркало двери </a></li>
+                                <li><a href="#">зеркало на крыле </a></li>
+                                <li><a href="#">кожух верхняя часть </a></li>
+                                <li><a href="#">крепление запасного колеса </a></li>
+                                <li><a href="#">крыло </a></li>
+                                <li><a href="#">крышка багажника </a></li>
+                                <li><a href="#">крышка топливного бака </a></li>
+                                <li><a href="#">ободок фары </a></li>
+                                <li><a href="#">панель боковая </a></li>
+                                <li><a href="#">панель задняя </a></li>
+                                <li><a href="#">петля двери </a></li>
+                                <li><a href="#">пластик </a></li>
+                                <li><a href="#">поддержка радиатора, телевизор </a></li>
+                                <li><a href="#">подкрылок </a></li>
+                                <li><a href="#">подножка </a></li>
+                                <li><a href="#">порог </a></li>
+                                <li><a href="#">рейлинг крыши </a></li>
+                                <li><a href="#">решетка </a></li>
+                                <li><a href="#">решетка радиатора </a></li>
+                                <li><a href="#">ручка двери наружная </a></li>
+                                <li><a href="#">спойлер бампера </a></li>
+                                <li><a href="#">спойлер нижний </a></li>
+                                <li><a href="#">стекло </a></li>
+                                <li><a href="#">стекло двери </a></li>
+                                <li><a href="#">стекло люка </a></li>
+                                <li><a href="#">стекло форточки </a></li>
+                                <li><a href="#">фендер </a></li>
+                                <li><a href="#">чехол запасного колеса </a></li>
+                            </ul>
+                            <span class="show-more">
+                                <span>Показать все</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="tabs-content__item" data-tab-content="tab3">
+                            <ul class="autoparts__list">
+                                <li><a href="#">багажник крыши </a></li>
+                                <li><a href="#">балка </a></li>
+                                <li><a href="#">бампер задний </a></li>
+                                <li><a href="#">бампер передний </a></li>
+                                <li><a href="#">брызговик </a></li>
+                                <li><a href="#">воздуховод </a></li>
+                                <li><a href="#">дверь задняя (5ая) </a></li>
+                                <li><a href="#">демпфер задний </a></li>
+                                <li><a href="#">защелка двери </a></li>
+                                <li><a href="#">защита </a></li>
+                                <li><a href="#">защита двигателя </a></li>
+                                <li><a href="#">защита нижняя </a></li>
+                                <li><a href="#">зеркало </a></li>
+                                <li><a href="#">зеркало боковое </a></li>
+                                <li><a href="#">зеркало вспомогательное </a></li>
+                                <li><a href="#">зеркало двери </a></li>
+                                <li><a href="#">зеркало на крыле </a></li>
+                                <li><a href="#">кожух верхняя часть </a></li>
+                                <li><a href="#">крепление запасного колеса </a></li>
+                                <li><a href="#">крыло </a></li>
+                                <li><a href="#">крышка багажника </a></li>
+                                <li><a href="#">крышка топливного бака </a></li>
+                                <li><a href="#">ободок фары </a></li>
+                                <li><a href="#">панель боковая </a></li>
+                                <li><a href="#">панель задняя </a></li>
+                                <li><a href="#">петля двери </a></li>
+                                <li><a href="#">пластик </a></li>
+                                <li><a href="#">поддержка радиатора, телевизор </a></li>
+                                <li><a href="#">подкрылок </a></li>
+                                <li><a href="#">подножка </a></li>
+                                <li><a href="#">порог </a></li>
+                                <li><a href="#">рейлинг крыши </a></li>
+                                <li><a href="#">решетка </a></li>
+                                <li><a href="#">решетка радиатора </a></li>
+                                <li><a href="#">ручка двери наружная </a></li>
+                                <li><a href="#">спойлер бампера </a></li>
+                                <li><a href="#">спойлер нижний </a></li>
+                                <li><a href="#">стекло </a></li>
+                                <li><a href="#">стекло двери </a></li>
+                                <li><a href="#">стекло люка </a></li>
+                                <li><a href="#">стекло форточки </a></li>
+                                <li><a href="#">фендер </a></li>
+                                <li><a href="#">чехол запасного колеса </a></li>
+                            </ul>
+                            <span class="show-more">
+                                <span>Показать все</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="tabs-content__item" data-tab-content="tab4">
+                            <ul class="autoparts__list">
+                                <li><a href="#">багажник крыши </a></li>
+                                <li><a href="#">балка </a></li>
+                                <li><a href="#">бампер задний </a></li>
+                                <li><a href="#">бампер передний </a></li>
+                                <li><a href="#">брызговик </a></li>
+                                <li><a href="#">воздуховод </a></li>
+                                <li><a href="#">дверь задняя (5ая) </a></li>
+                                <li><a href="#">демпфер задний </a></li>
+                                <li><a href="#">защелка двери </a></li>
+                                <li><a href="#">защита </a></li>
+                                <li><a href="#">защита двигателя </a></li>
+                                <li><a href="#">защита нижняя </a></li>
+                                <li><a href="#">зеркало </a></li>
+                                <li><a href="#">зеркало боковое </a></li>
+                                <li><a href="#">зеркало вспомогательное </a></li>
+                                <li><a href="#">зеркало двери </a></li>
+                                <li><a href="#">зеркало на крыле </a></li>
+                                <li><a href="#">кожух верхняя часть </a></li>
+                                <li><a href="#">крепление запасного колеса </a></li>
+                                <li><a href="#">крыло </a></li>
+                                <li><a href="#">крышка багажника </a></li>
+                                <li><a href="#">крышка топливного бака </a></li>
+                                <li><a href="#">ободок фары </a></li>
+                                <li><a href="#">панель боковая </a></li>
+                                <li><a href="#">панель задняя </a></li>
+                                <li><a href="#">петля двери </a></li>
+                                <li><a href="#">пластик </a></li>
+                                <li><a href="#">поддержка радиатора, телевизор </a></li>
+                                <li><a href="#">подкрылок </a></li>
+                                <li><a href="#">подножка </a></li>
+                                <li><a href="#">порог </a></li>
+                                <li><a href="#">рейлинг крыши </a></li>
+                                <li><a href="#">решетка </a></li>
+                                <li><a href="#">решетка радиатора </a></li>
+                                <li><a href="#">ручка двери наружная </a></li>
+                                <li><a href="#">спойлер бампера </a></li>
+                                <li><a href="#">спойлер нижний </a></li>
+                                <li><a href="#">стекло </a></li>
+                                <li><a href="#">стекло двери </a></li>
+                                <li><a href="#">стекло люка </a></li>
+                                <li><a href="#">стекло форточки </a></li>
+                                <li><a href="#">фендер </a></li>
+                                <li><a href="#">чехол запасного колеса </a></li>
+                            </ul>
+                            <span class="show-more">
+                                <span>Показать все</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="tabs-content__item" data-tab-content="tab5">
+                            <ul class="autoparts__list">
+                                <li><a href="#">багажник крыши </a></li>
+                                <li><a href="#">балка </a></li>
+                                <li><a href="#">бампер задний </a></li>
+                                <li><a href="#">бампер передний </a></li>
+                                <li><a href="#">брызговик </a></li>
+                                <li><a href="#">воздуховод </a></li>
+                                <li><a href="#">дверь задняя (5ая) </a></li>
+                                <li><a href="#">демпфер задний </a></li>
+                                <li><a href="#">защелка двери </a></li>
+                                <li><a href="#">защита </a></li>
+                                <li><a href="#">защита двигателя </a></li>
+                                <li><a href="#">защита нижняя </a></li>
+                                <li><a href="#">зеркало </a></li>
+                                <li><a href="#">зеркало боковое </a></li>
+                                <li><a href="#">зеркало вспомогательное </a></li>
+                                <li><a href="#">зеркало двери </a></li>
+                                <li><a href="#">зеркало на крыле </a></li>
+                                <li><a href="#">кожух верхняя часть </a></li>
+                                <li><a href="#">крепление запасного колеса </a></li>
+                                <li><a href="#">крыло </a></li>
+                                <li><a href="#">крышка багажника </a></li>
+                                <li><a href="#">крышка топливного бака </a></li>
+                                <li><a href="#">ободок фары </a></li>
+                                <li><a href="#">панель боковая </a></li>
+                                <li><a href="#">панель задняя </a></li>
+                                <li><a href="#">петля двери </a></li>
+                                <li><a href="#">пластик </a></li>
+                                <li><a href="#">поддержка радиатора, телевизор </a></li>
+                                <li><a href="#">подкрылок </a></li>
+                                <li><a href="#">подножка </a></li>
+                                <li><a href="#">порог </a></li>
+                                <li><a href="#">рейлинг крыши </a></li>
+                                <li><a href="#">решетка </a></li>
+                                <li><a href="#">решетка радиатора </a></li>
+                                <li><a href="#">ручка двери наружная </a></li>
+                                <li><a href="#">спойлер бампера </a></li>
+                                <li><a href="#">спойлер нижний </a></li>
+                                <li><a href="#">стекло </a></li>
+                                <li><a href="#">стекло двери </a></li>
+                                <li><a href="#">стекло люка </a></li>
+                                <li><a href="#">стекло форточки </a></li>
+                                <li><a href="#">фендер </a></li>
+                                <li><a href="#">чехол запасного колеса </a></li>
+                            </ul>
+                            <span class="show-more">
+                                <span>Показать все</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="tabs-content__item" data-tab-content="tab6">
+                            <ul class="autoparts__list">
+                                <li><a href="#">багажник крыши </a></li>
+                                <li><a href="#">балка </a></li>
+                                <li><a href="#">бампер задний </a></li>
+                                <li><a href="#">бампер передний </a></li>
+                                <li><a href="#">брызговик </a></li>
+                                <li><a href="#">воздуховод </a></li>
+                                <li><a href="#">дверь задняя (5ая) </a></li>
+                                <li><a href="#">демпфер задний </a></li>
+                                <li><a href="#">защелка двери </a></li>
+                                <li><a href="#">защита </a></li>
+                                <li><a href="#">защита двигателя </a></li>
+                                <li><a href="#">защита нижняя </a></li>
+                                <li><a href="#">зеркало </a></li>
+                                <li><a href="#">зеркало боковое </a></li>
+                                <li><a href="#">зеркало вспомогательное </a></li>
+                                <li><a href="#">зеркало двери </a></li>
+                                <li><a href="#">зеркало на крыле </a></li>
+                                <li><a href="#">кожух верхняя часть </a></li>
+                                <li><a href="#">крепление запасного колеса </a></li>
+                                <li><a href="#">крыло </a></li>
+                                <li><a href="#">крышка багажника </a></li>
+                                <li><a href="#">крышка топливного бака </a></li>
+                                <li><a href="#">ободок фары </a></li>
+                                <li><a href="#">панель боковая </a></li>
+                                <li><a href="#">панель задняя </a></li>
+                                <li><a href="#">петля двери </a></li>
+                                <li><a href="#">пластик </a></li>
+                                <li><a href="#">поддержка радиатора, телевизор </a></li>
+                                <li><a href="#">подкрылок </a></li>
+                                <li><a href="#">подножка </a></li>
+                                <li><a href="#">порог </a></li>
+                                <li><a href="#">рейлинг крыши </a></li>
+                                <li><a href="#">решетка </a></li>
+                                <li><a href="#">решетка радиатора </a></li>
+                                <li><a href="#">ручка двери наружная </a></li>
+                                <li><a href="#">спойлер бампера </a></li>
+                                <li><a href="#">спойлер нижний </a></li>
+                                <li><a href="#">стекло </a></li>
+                                <li><a href="#">стекло двери </a></li>
+                                <li><a href="#">стекло люка </a></li>
+                                <li><a href="#">стекло форточки </a></li>
+                                <li><a href="#">фендер </a></li>
+                                <li><a href="#">чехол запасного колеса </a></li>
+                            </ul>
+                            <span class="show-more">
+                                <span>Показать все</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="tabs-content__item" data-tab-content="tab7">
+                            <ul class="autoparts__list">
+                                <li><a href="#">багажник крыши </a></li>
+                                <li><a href="#">балка </a></li>
+                                <li><a href="#">бампер задний </a></li>
+                                <li><a href="#">бампер передний </a></li>
+                                <li><a href="#">брызговик </a></li>
+                                <li><a href="#">воздуховод </a></li>
+                                <li><a href="#">дверь задняя (5ая) </a></li>
+                                <li><a href="#">демпфер задний </a></li>
+                                <li><a href="#">защелка двери </a></li>
+                                <li><a href="#">защита </a></li>
+                                <li><a href="#">защита двигателя </a></li>
+                                <li><a href="#">защита нижняя </a></li>
+                                <li><a href="#">зеркало </a></li>
+                                <li><a href="#">зеркало боковое </a></li>
+                                <li><a href="#">зеркало вспомогательное </a></li>
+                                <li><a href="#">зеркало двери </a></li>
+                                <li><a href="#">зеркало на крыле </a></li>
+                                <li><a href="#">кожух верхняя часть </a></li>
+                                <li><a href="#">крепление запасного колеса </a></li>
+                                <li><a href="#">крыло </a></li>
+                                <li><a href="#">крышка багажника </a></li>
+                                <li><a href="#">крышка топливного бака </a></li>
+                                <li><a href="#">ободок фары </a></li>
+                                <li><a href="#">панель боковая </a></li>
+                                <li><a href="#">панель задняя </a></li>
+                                <li><a href="#">петля двери </a></li>
+                                <li><a href="#">пластик </a></li>
+                                <li><a href="#">поддержка радиатора, телевизор </a></li>
+                                <li><a href="#">подкрылок </a></li>
+                                <li><a href="#">подножка </a></li>
+                                <li><a href="#">порог </a></li>
+                                <li><a href="#">рейлинг крыши </a></li>
+                                <li><a href="#">решетка </a></li>
+                                <li><a href="#">решетка радиатора </a></li>
+                                <li><a href="#">ручка двери наружная </a></li>
+                                <li><a href="#">спойлер бампера </a></li>
+                                <li><a href="#">спойлер нижний </a></li>
+                                <li><a href="#">стекло </a></li>
+                                <li><a href="#">стекло двери </a></li>
+                                <li><a href="#">стекло люка </a></li>
+                                <li><a href="#">стекло форточки </a></li>
+                                <li><a href="#">фендер </a></li>
+                                <li><a href="#">чехол запасного колеса </a></li>
+                            </ul>
+                            <span class="show-more">
+                                <span>Показать все</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__col footer__col-first">
+                    <a href="#" class="footer__logo"><img src="img/logo-full.png" alt=""></a>
+                    <div class="footer__payment-systems">
+                        <img src="img/PayPal-logo.svg" alt="">
+                        <div class="d-flex">
+                            <img src="img/visa.svg" alt="">
+                            <img src="img/master.svg" alt="">
+                            <img src="img/amex.svg" alt="">
+                            <img src="img/discover.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer__store-logos">
+                        <img src="img/yahoo-logo.svg" alt="">
+                        <img src="img/rakuten-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Компания</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Условия предоставления услуги</a></li>
+                        <li><a href="#">Политика конфиденцальности</a></li>
+                        <li><a href="#">Политика возвратов</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Личный кабинет</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Моя страница</a></li>
+                        <li><a href="#">Мой аукцион</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Посылки</a></li>
+                        <li><a href="#">Служба поддержки</a></li>
+                    </ul>
+                    <hr>
+                    <h5 class="footer__col-title">Сервисы</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Калькулятор доставки</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Контакты</h5>
+                    <div class="footer-accordion">
+                        <div class="footer__contacts">
+                            <p>Onteco Co., Ltd. - Tanuki Shop International Sales </p>
+                            <address>Address: 939-0304, Japan, Toyama prefecture, Imizu, Kosugi Shiraishi 638
+                            </address>
+                            <div class="d-flex">
+                                <div><span>Центр поддержки клиентов</span></div>
+                                <div>
+                                    <span>9:00 – 18:00</span>
+                                    <small>время по Японии</small>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="footer__divider"></span>
+                        <div class="footer__telegram">
+                            <small>Только для сообщений</small>
+                            <dl>
+                                <dt><img src="img/telegram.svg" alt=""> Telegram</dt>
+                                <dd>
+                                    <a href="#">+81 80-4380-1212</a>
+                                    <small>вопросы обработки посылок, отправок</small>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright">Copyright © 2025 Tanukishop.com. All Rights Reserved. Company registration number:
+                    3230001014477</p>
+                <a href="#" target="_blank"><img src="img/insta.svg" alt=""></a>
+            </div>
+        </footer>
+
+        <div class="mobile-nav tablet-only">
+            <nav class="d-flex">
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#home"></use>
+                    </svg>
+                    <span>Главная</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#auction"></use>
+                    </svg>
+                    <span>Аукционы</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#cart"></use>
+                    </svg>
+                    <span>Корзина</span>
+                </a>
+                <div class="mobile-nav__item notes-trigger">
+                    <div class="header-btns__icon">
+                        <svg viewBox="0 0 25 24" width="25" height="24">
+                            <use href="/sprite.svg#notes"></use>
+                        </svg>
+                        <span>6</span>
+                    </div>
+                    <span>Уведомления</span>
+                </div>
+                <a href="#" class="mobile-nav__item mobile-nav__login">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Войти</span>
+                </a>
+                <a href="#" class="mobile-nav__item mobile-nav__profile">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Профиль</span>
+                </a>
+            </nav>
+        </div>
+
+    </div>
+    <div class="modal-overlay"></div>
+<div class="mobile-search-modal">
+        <div class="mobile-search-modal__header">
+            <button class="mobile-search-modal__back">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use href="sprite.svg#arr-left"></use>
+                </svg>
+            </button>
+            <form class="mobile-search-modal__form">
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <use href="sprite.svg#search"></use>
+                </svg>
+                <input type="text" id="mobile-search-input" placeholder="Найти товары" autofocus>
+            </form>
+        </div>
+        <div class="mobile-search-modal__content">
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus only-auth">
+                <div class="mobile-search-modal__title">Вы искали</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Мотоциклы аукцион
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Японская косметика оптом
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Часы Seiko бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Диски на авто с аукциона
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Фотоаппараты Canon бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus">
+                <div class="mobile-search-modal__title">Часто ищут</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        iPhone б/у Япония
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Casio G-Shock оригинал аукцион
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Роботы-пылесос с аукциона
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Лот японская посуда
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Шины бу Япония
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__focus">
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>аукцион Япония</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>под заказ из Японии</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>с пробегом Япония</b>
+                    </li>
+                </ul>
+                <div class="mobile-search-modal__title">Перейти в раздел</div>
+                <div class="mobile-search-modal__parts">
+                    <div class="mobile-search-modal__categories">
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Автомобили</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Мотоциклы</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Запчасти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="totop">
+        <svg width="20" height="20" viewBox="0 0 20 20">
+            <use href="sprite.svg#arrow"></use>
+        </svg>
+    </div>
+    <div class="cookies-note d-flex">
+        <img src="img/Info.svg" alt="">
+        <div>
+            <p>Мы используем <a href="#">cookies</a>, чтобы сохранять ваш поиск, рекомендовать
+                полезное и создавать другие удобства на сайте</p>
+            <button type="button" class="cookies-note__agree">Ок</button>
+        </div>
+        <button class="cookies-note__close">
+            <svg viewBox="0 0 16 16" width="16" height="16">
+                <use href="sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

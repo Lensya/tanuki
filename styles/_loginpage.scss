@@ -1,0 +1,341 @@
+.loginpage {
+    background-color: #fff;
+    border-radius: 16px;
+
+    @media (max-width: 767px) {
+        margin: 16px;
+    }
+
+    @media (max-width: 1279px) and (min-width: 768px) {
+        margin: 24px;
+    }
+
+    @media (min-width: 1280px) {
+        margin: 32px;
+    }
+}
+
+.login-layout {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+
+    @media (max-width: 767px) {
+        padding: 32px 16px;
+    }
+
+    @media (min-width: 768px) {
+        width: 448px;
+        margin: auto;
+        padding: 60px 0;
+    }
+
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+
+        p {
+            margin-bottom: 0;
+
+            span {
+                color: $textBrand;
+            }
+        }
+    }
+
+    &__more {
+        display: flex;
+        column-gap: 12px;
+
+        a {
+            color: $brandColor;
+        }
+
+        @media (max-width: 767px) {
+            text-align: center;
+            flex-direction: column;
+            row-gap: 12px;
+        }
+    }
+
+    .span-note {
+        small {
+            line-height: 16px;
+        }
+
+        svg {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+    }
+
+    .btn.main-btn {
+        width: 100%;
+    }
+
+    .remembered-pass {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+
+        &:has([hidden]) {
+            display: none;
+        }
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+
+        
+    }
+
+    &__submit {
+        width: 100%;
+        border-radius: 16px;
+        background-color: $brandColor;
+        color: #fff;
+        height: 44px;
+
+        &:hover {
+            background-color: $brandColorHover;
+        }
+
+        &:disabled {
+            background-color: $baseGeneric;
+            color: $textHint;
+        }
+    }
+
+    .d-flex {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__forgot-password {
+        color: $textInfo;
+    }
+
+ 
+
+    .error {
+        display: none;
+        color: $textDanger;
+        font-size: 14px;
+    }
+
+    &__passwords {
+        position: relative;
+
+        .password-hint {
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+        }
+      
+    }
+
+    .password-btn {
+        color: $textSecondary;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        border-radius: 12px;
+        background-color: #fff;
+        padding: 10px;
+        border: none;
+
+        &:hover {
+            background-color: rgba(107, 132, 153, 0.10);
+        }
+
+    }
+
+    .password-hint__text {
+        display: none;
+        border-radius: 8px;
+        background-color: #FFF;
+        color: $textComplementary;
+        padding: 16px;
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+        width: 300px;
+        text-align: left;
+        font-size: 14px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(100% + 16px);
+
+        @media (max-width: 767px) {
+            left: auto;
+            transform: translateX(0);
+            right: -24px;
+        }
+
+
+        ul {
+            list-style: disc inside;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -13px;
+            width: 28px;
+            left: 50%;
+            margin-left: -14px;
+            height: 13px;
+            background: url(../img/Pin-white-bg.svg) no-repeat;
+
+            @media (max-width: 767px) {
+                left: auto;
+                right: 24px;
+            }
+        }
+    }
+
+    .password-btn:hover+.password-hint__text {
+        display: block;
+    }
+
+    .password-control {
+        display: none;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        color: $textSecondary;
+        padding: 10px;
+
+        transition: background-color 0.2s;
+        border-radius: 12px;
+        background-color: #fff;
+
+        &:hover {
+            background-color: rgba(107, 132, 153, 0.10);
+        }
+    }
+
+
+    /* Скрыть флаг и оставить только код страны */
+    .iti__selected-flag>div:first-child {
+        opacity: 0;
+    }
+
+    /* Переместить код страны влево */
+    // .iti__selected-dial-code {
+    //     padding-left: 10px;
+    // }
+
+
+    .iti--allow-dropdown .iti__flag-container,
+    .iti--separate-dial-code .iti__flag-container {
+        left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .iti__selected-flag {
+        height: auto;
+        padding: 5px 9px 5px 0;
+        border-radius: 8px;
+        background-color: transparent;
+
+        // background-color: $baseGeneric;    
+        // min-width: 56px;
+        &::before {
+            content: '';
+            display: block;
+            border-radius: 8px;
+            background-color: $baseGeneric;
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            right: 0;
+            left: 8px;
+            bottom: 0;
+
+        }
+    }
+
+    .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+        margin-left: 0;
+        padding: 0 5px 0 0;
+        color: $textPrimary;
+    }
+
+    .iti__arrow {
+        margin: 0;
+    }
+
+
+    &__select {
+        display: flex;
+        align-items: center;
+        column-gap: 2px;
+        width: 100%;
+        padding:  4px  4px  4px 12px;
+        border-radius: 16px;
+        border: 1px solid rgba(0, 0, 0, .1);
+        height: 44px;
+        color: $textPrimary;
+
+        select {
+            height: 36px;
+            border: none;
+            width: 100%;
+            padding: 4px;
+            background-color: #fff;
+            color: $textPrimary;
+        }
+    }
+
+    &__note {
+        color: $textPrimary;
+    }
+}
+
+.auth-social-btn {
+    display: flex;
+    column-gap: 12px;
+    padding: 12px 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background-color: #fff;
+    color: $textPrimary;
+    justify-content: center;
+
+    &:hover {
+        border-color: rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 767px) {
+        padding: 12px;
+        width: 100%;
+    }
+}

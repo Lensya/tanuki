@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tanukishop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth">
+    <div class="container">
+
+        <header class="header">
+            <div class="header__first-row tablet-none">
+                <div class="d-flex">
+                    <nav class="top-menu">
+                        <ul>
+                            <li><a href="#" class="top-menu__item">О компании</a></li>
+                            <li><a href="#" class="top-menu__item">Стоимость</a></li>
+                            <li><a href="#" class="top-menu__item">Доставка</a></li>
+                            <li><a href="#" class="top-menu__item">Контакты</a></li>
+                            <li><a href="#" class="top-menu__item-highlighted">Авто из Японии</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-bar">
+                        <div class="top-bar__time time-msk">
+                            <b>10:00</b> в Москве
+                        </div>
+                        <div class="top-bar__time time-jpn">
+                            <b>10:00</b> в Японии
+                        </div>
+                        <div class="wallet">
+                            Кошелек
+                            <div class="wallet__balance">10,300 RUB</div>
+                        </div>
+                        <div class="exch-rate">
+                            <span>1$ = 144.78¥</span>
+                            <span>100¥ = 68.75Р</span>
+                        </div>
+                        <div class="d-flex top-bar__dropdowns">
+                            <div class="currency dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>₽ RUB</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-currency">
+                                    <ul>
+                                        <li><a href="#">¥ JPY</a></li>
+                                        <li class="current"><a href="#">₽ RUB</a></li>
+                                        <li><a href="#">$ USD</a></li>
+                                        <li><a href="#">元 CNY</a></li>
+                                        <li><a href="#">€ EUR</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="language dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>RU</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-language">
+                                    <ul>
+                                        <li class="current"><a href="#">
+                                                <span>Russian</span>
+                                                <span>Русский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>English</span>
+                                                <span>Английский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>Chinese</span>
+                                                <span>中文</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__second-row">
+                <div class="d-flex">
+                    <a href="#" class="logo">
+                        <img src="img/Tanuki.svg" alt="">
+                        <img src="img/tanuki-title.svg" alt="" class="tablet-none">
+                    </a>
+                    <div class="search-row">
+                        <div class="select-store dropdown tablet-none">
+                            <a href="#" class="btn header-btn dropdown-toggle"><span class="select-store__title">Y!
+                                    Auctions</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-store">
+                                <ul>
+                                    <li class="current"><a href="#">Y! Auctions</a></li>
+                                    <li><a href="#">Y! Shopping</a></li>
+                                    <li><a href="#">Racuten</a></li>
+                                    <li><a href="#">Croooober</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-category tablet-none">
+                            <a href="#" class="btn light-btn js-select-category">
+                                <span class="select-category__title">Все категории</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="select-cats-modal">
+                                <div class="select-cats-modal__header">
+                                    <div class="select-cats-modal__header-title">Выберите категорию для поиска</div>
+                                    <button class="select-cats-modal__header-close">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="select-cats-modal__body">
+                                    <ul class="select-cats-modal__list">
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#search"></use>
+                                            </svg><span>Все категории</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#bit-tech"></use>
+                                            </svg><span>Бытовая техника</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#fanats"></use>
+                                            </svg><span>Товары для фанатов</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#beauty"></use>
+                                            </svg><span>Красота и здоровье</span>
+                                        </li>
+
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#gardening"></use>
+                                            </svg><span>Садоводство</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#games"></use>
+                                            </svg><span>Игры и игрушки</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#sport"></use>
+                                            </svg><span>Спорт и отдых</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#hobby"></use>
+                                            </svg><span>Хобби и увлечения</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="search-form">
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="tablet-only">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                            <input type="text" name="search"
+                                placeholder="Модель кузова, поисковое слово или номер лота">
+                            <button class="btn header-btn tablet-none">
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#search"></use>
+                                </svg>
+                                <span>Найти</span></button>
+                        </form>
+                    </div>
+                    <div class="mobile-menu__trigger tablet-only">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#burger"></use>
+                        </svg>
+                    </div>
+                    <div class="header-btns">
+                        <a href="#" class="header-btns__item">
+                            <svg viewBox="0 0 25 24" width="25" height="24">
+                                <use href="sprite.svg#support"></use>
+                            </svg>
+                            <span>Поддержка</span>
+                        </a>
+                        <div class="header-btns__item header-btns__notes">
+                            <div class="notes-btn">
+                                <div class="header-btns__icon">
+                                    <svg viewBox="0 0 25 24" width="25" height="24">
+                                        <use href="/sprite.svg#notes"></use>
+                                    </svg>
+                                    <span>10</span>
+                                </div>
+                                <span>Уведомления</span>
+                            </div>
+
+                            <div class="notes-tooltip">
+                                <div class="notes-title">
+                                    <strong>Уведомления <span>(5)</span></strong>
+                                    <button class="notes-close tablet-only">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="notes-body">
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="header-btns__item header-btns__profile current">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="sprite.svg#profile"></use>
+                            </svg>
+                            <span>Профиль</span>
+                        </a>
+                        <a href="#" class="header-btns__item">
+                            <div class="header-btns__icon">
+                                <svg viewBox="0 0 25 24" width="25" height="24">
+                                    <use href="/sprite.svg#cart"></use>
+                                </svg>
+                                <span>2</span>
+                            </div>
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                    <a href="#" class="btn header-btn login-btn tablet-none">Войти</a>
+                </div>
+                <div class="modal-header-overlay"></div>
+            </div>
+            <div class="header__third-row tablet-none">
+                <div class="d-flex">
+                    <nav class="cats-menu">
+                        <ul class="menu">
+                            <li class="has-child"><a href="#" class="menu__item">Автозапчасти</a>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                                <ul class="submenu">
+                                    <li><a href="#" class="menu__item">Поиск на аукционе</a></li>
+                                    <li><a href="#" class="menu__item">Заказ новых запчастей</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu__item">Шины и диски</a></li>
+                            <li><a href="#" class="menu__item">Мототехника</a></li>
+                            <li class="menu__item menu__item--more">
+                                <span class="menu-more-title">Еще</span>
+                                <ul class="mobile-submenu menu">
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Спорт и отдых</a>
+                                    </li>
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Аниме товары</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="#" class="menu__item">Спорт и отдых</a></li>
+                            <li><a href="#" class="menu__item">Аниме товары</a></li> -->
+                        </ul>
+                    </nav>
+                    <nav class="stores-menu">
+                        <ul class="menu">
+                            <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                            <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                            <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                            <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                            <li><a href="#" class="menu__item">Другие магазины</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-menu tablet-only">
+                <div class="mobile-menu__head">
+                    <a href="#" class="mobile-menu__logo">
+                        <img src="img/Tanuki.svg" alt="">
+                    </a>
+                    <a href="#" class="mobile-menu__user">
+                        <img src="img/ava.svg" alt="" class="mobile-menu__avatar">
+                        <span class="mobile-menu__name">Константин</span>
+                    </a>
+                    <a href="#" class="btn header-btn login-btn">Войти</a>
+                    <button class="mobile-menu__close">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="">
+                    <ul class="">
+                        <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                        <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                        <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                        <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                        <li><a href="#" class="menu__item">Другие магазины</a></li>
+                    </ul>
+                </nav>
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="menu__item">О компании</a></li>
+                        <li><a href="#" class="menu__item">Стоимость</a></li>
+                        <li><a href="#" class="menu__item">Доставка</a></li>
+                        <li><a href="#" class="menu__item">Контакты</a></li>
+                        <li><a href="#" class="menu__item menu__item-highlighted">Авто из Японии</a></li>
+                        <li><a href="#" class="menu__item">Поддержка</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__bottom">
+                    <div class="exch-rate">
+                        <span>1$ = 144.78¥</span>
+                        <span>100¥ = 68.75Р</span>
+                    </div>
+                    <div class="wallet">
+                        <strong>Кошелек</strong>
+                        <div class="wallet__balance">10,300 RUB</div>
+                    </div>
+                    <div class="mobile-menu__language">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Язык</strong>
+                            <span>Русский</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Язык</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li class="current"><a href="#">Russian (Русский)</a></li>
+                                <li><a href="#">English (English)</a></li>
+                                <li><a href="#">Chinese (中文)</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu__currency">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Валюта</strong>
+                            <span>RUB</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Валюта</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li><a href="#">¥ JPY</a></li>
+                                <li class="current"><a href="#">₽ RUB</a></li>
+                                <li><a href="#">$ USD</a></li>
+                                <li><a href="#">元 CNY</a></li>
+                                <li><a href="#">€ EUR</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__overlay"></div>
+            </div>
+        </header>
+
+        <main class="account-cart">
+            <ul class="breadcrumbs">
+                <li><a href="#">Моя страница</a></li>
+                <li><a href="#">Посылки</a></li>
+                <li class="current-item"><span>Создание новой посылки</span></li>
+            </ul>
+
+            <div class="cart-layout">
+                <div class="cart">
+                    <div class="cart__main">
+                        <div class="new-parcel__head">
+                            <h1>Создание новой посылки</h1>
+                            <a href="#" class="support-link btn light-btn">Создать заявку в службу поддержки</a>
+                        </div>
+
+                        <div class="new-parcel__orders">
+                            <div class="cart__subtitle">
+                                <strong>Заказы, готовые к отправке</strong>
+                                <span>4 товара</span>
+                            </div>
+                            <div class="new-parcel__item">
+                                <div class="cart__img-wrap">
+                                    <img src="img/temp2.jpg" alt="" width="96" height="120" class="product-card__img">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="check-product">
+                                        <label for="check-product"></label>
+                                    </div>
+                                </div>
+                                <strong class="new-parcel__order-date">Заказ от 3 мая 2025</strong>
+                                <div class="new-parcel__track-number">
+                                    <a href="#" class="track-number">TNK0000126666</a>
+                                    <a href="#" class="seller">Y! Shopping</a>
+                                </div>
+                                <div class="new-parcel__prices">
+                                    <div class="product-card__price">
+                                        <span class="main-cur">₽ 1,567</span>
+                                        <span class="other-cur">$91</span>
+                                        <span class="new-parcel__weight">0,2 кг</span>
+                                    </div>
+                                    <span class="order-status">Статус</span>
+                                </div>
+                                <div class="new-parcel__btns">
+                                    <a href="#" class="btn light-btn">Детали<span class="mobile-none"> заказа</span></a>
+                                </div>
+                            </div>
+
+                            <div class="new-parcel__item">
+                                <div class="cart__img-wrap">
+                                    <img src="img/temp2.jpg" alt="" width="96" height="120" class="product-card__img">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="check-product1">
+                                        <label for="check-product1"></label>
+                                    </div>
+                                </div>
+                                <strong class="new-parcel__order-date">Заказ от 3 мая 2025</strong>
+                                <div class="new-parcel__track-number">
+                                    <a href="#" class="track-number">TNK0000126666</a>
+                                    <a href="#" class="seller">Y! Shopping</a>
+                                </div>
+                                <div class="new-parcel__prices">
+                                    <div class="product-card__price">
+                                        <span class="main-cur">₽ 1,567</span>
+                                        <span class="other-cur">$91</span>
+                                        <span class="new-parcel__weight">0,2 кг</span>
+                                    </div>
+                                    <span class="order-status">Статус</span>
+                                </div>
+                                <div class="new-parcel__btns">
+                                    <a href="#" class="btn light-btn">Детали<span class="mobile-none"> заказа</span></a>
+                                </div>
+                            </div>
+                            <div class="new-parcel__item">
+                                <div class="cart__img-wrap">
+                                    <img src="img/temp2.jpg" alt="" width="96" height="120" class="product-card__img">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="check-product2">
+                                        <label for="check-product2"></label>
+                                    </div>
+                                </div>
+                                <strong class="new-parcel__order-date">Заказ от 3 мая 2025</strong>
+                                <div class="new-parcel__track-number">
+                                    <a href="#" class="track-number">TNK0000126666</a>
+                                    <a href="#" class="seller">Y! Shopping</a>
+                                </div>
+                                <div class="new-parcel__prices">
+                                    <div class="product-card__price">
+                                        <span class="main-cur">₽ 1,567</span>
+                                        <span class="other-cur">$91</span>
+                                        <span class="new-parcel__weight">0,2 кг</span>
+                                    </div>
+                                    <span class="order-status">Статус</span>
+                                </div>
+                                <div class="new-parcel__btns">
+                                    <a href="#" class="btn light-btn">Детали<span class="mobile-none"> заказа</span></a>
+                                </div>
+                            </div>
+                            <div class="new-parcel__item">
+                                <div class="cart__img-wrap">
+                                    <img src="img/temp2.jpg" alt="" width="96" height="120" class="product-card__img">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="check-product3">
+                                        <label for="check-product3"></label>
+                                    </div>
+                                </div>
+                                <strong class="new-parcel__order-date">Заказ от 3 мая 2025</strong>
+                                <div class="new-parcel__track-number">
+                                    <a href="#" class="track-number">TNK0000126666</a>
+                                    <a href="#" class="seller">Y! Shopping</a>
+                                </div>
+                                <div class="new-parcel__prices">
+                                    <div class="product-card__price">
+                                        <span class="main-cur">₽ 1,567</span>
+                                        <span class="other-cur">$91</span>
+                                        <span class="new-parcel__weight">0,2 кг</span>
+                                    </div>
+                                    <span class="order-status">Статус</span>
+                                </div>
+                                <div class="new-parcel__btns">
+                                    <a href="#" class="btn light-btn">Детали<span class="mobile-none"> заказа</span></a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="additional-services">
+                            <div class="additional-services__title">
+                                <h2>Дополнительные услуги</h2>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </div>
+                            <div class="additional-services__content active">
+                                <div class="add-serv__item">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="add-serv1">
+                                        <label for="add-serv1">Индивидуальная работа с товаром по просьбе клиента
+                                            (изменение веса, переупаковка, фото)</label>
+                                    </div>
+                                    <strong>1000 ¥ / 15 мин. работы</strong>
+                                </div>
+                                <div class="add-serv__item">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="add-serv2">
+                                        <label for="add-serv2">Использование вспененного наполнителя Instapak
+                                            <div class="add-serv__info">
+                                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                                    <use href="sprite.svg#infoFill"></use>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <strong>2000 ¥/место (не применяется к колонкам)</strong>
+                                </div>
+                                <div class="add-serv__item">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="add-serv3">
+                                        <label for="add-serv3">Упаковка в соответствии с индивидуальными пожеланиями
+                                            клиента</label>
+                                    </div>
+                                    <strong>от 2000 ¥</strong>
+                                </div>
+                                <div class="add-serv__item">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="add-serv4">
+                                        <label for="add-serv4">Индивидуальная работа с товаром по просьбе клиента
+                                            (изменение веса, переупаковка, фото)</label>
+                                    </div>
+                                    <strong>1000 ¥ / 15 мин. работы</strong>
+                                </div>
+                                <div class="add-serv__item">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="add-serv5">
+                                        <label for="add-serv5">Использование вспененного наполнителя Instapak </label>
+                                    </div>
+                                    <strong>2000 ¥/место (не применяется к колонкам)</strong>
+                                </div>
+                                <div class="add-serv__item">
+                                    <div class="checkbox-input">
+                                        <input type="checkbox" id="add-serv6">
+                                        <label for="add-serv6">Упаковка в соответствии с индивидуальными пожеланиями
+                                            клиента</label>
+                                    </div>
+                                    <strong>от 2000 ¥</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="additional-services">
+                            <div class="additional-services__title">
+                                <h2>Способ доставки</h2>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </div>
+                            <div class="additional-services__content active">
+                                <div class="radio-btns">
+                                    <div class="radio-btns__item">
+                                        <input type="radio" name="shipping" id="shipping1" checked>
+                                        <label for="shipping1">Не выбрано</label>
+                                    </div>
+                                    <div class="radio-btns__item">
+                                        <input type="radio" name="shipping" id="shipping2">
+                                        <label for="shipping2">
+                                            <div class="">
+                                                <span>Tanuki International</span>
+                                                <span class="insurance"><span>Страховка</span> <strong>0
+                                                        ¥</strong></span>
+                                                <span class="days">60-90 дней</span>
+                                                <strong class="add-price">1,500 ¥</strong>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="shipping-details" id="shipping-details">
+                                    <div class="shipping-details__row">
+                                        <button type="button" class="shipping-details__select"
+                                            data-modal-open="add-address__modal">
+                                            <span class="shipping-details__label">Адрес</span>
+                                            <span class="shipping-details__value">Москва, улица 40 лет Победы, 84</span>
+                                            <span class="shipping-details__arr-icon">
+                                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                                    <use href="sprite.svg#shevron-right"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <button type="button" class="shipping-details__select">
+                                            <span class="shipping-details__label">Получатель</span>
+                                            <span class="shipping-details__value">Константинов&nbsp;К.К.
+                                                +7&nbsp;900&nbsp;123-45-67</span>
+                                            <span class="shipping-details__arr-icon">
+                                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                                    <use href="sprite.svg#shevron-right"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="shipping-details__columns">
+                                        <div class="shipping-details__column">
+                                            <div class="shipping-details__subtitle">Транспортная компания</div>
+                                            <div class="shipping-details__radio-group radio-btns">
+                                                <div class="radio-btns__item">
+                                                    <input type="radio" id="tr1" name="transport" checked>
+                                                    <label for="tr1">
+                                                        <div class="d-flex">
+                                                            <span>Деловые линии</span>
+                                                            <button type="button"
+                                                                class="shipping-details__calc">Рассчитать</button>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-btns__item">
+                                                    <input type="radio" id="tr2" name="transport" checked>
+                                                    <label for="tr2">
+                                                        <div class="d-flex">
+                                                            <span>СДЭК</span>
+                                                            <button type="button"
+                                                                class="shipping-details__calc">Рассчитать</button>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-btns__item">
+                                                    <input type="radio" id="tr3" name="transport" checked>
+                                                    <label for="tr3">
+                                                        <div class="d-flex">
+                                                            <span>Энергия</span>
+                                                            <button type="button"
+                                                                class="shipping-details__calc">Рассчитать</button>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="radio-btns__item">
+                                                    <input type="radio" id="tr4" name="transport">
+                                                    <label for="tr4">
+                                                        <div class="d-flex">
+                                                            <span>Самовывоз</span>
+                                                            <span class="shipping-details__pickup-address">Россия,
+                                                                Владивосток, ул. Борисенко, 17Б, стр. 3</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="shipping-details__column">
+                                            <div class="shipping-details__subtitle">Способ упаковки</div>
+                                            <div class="shipping-details__radio-group  radio-btns">
+                                                <div class="radio-btns__item">
+                                                    <input type="radio" name="packing" id="packing1" checked>
+                                                    <label for="packing1">
+                                                        Нет
+                                                    </label>
+                                                </div>
+                                                <div class="radio-btns__item">
+                                                    <input type="radio" name="packing" id="packing2">
+                                                    <label for="packing2">
+                                                        Обрешетка
+                                                    </label>
+                                                </div>
+                                                <div class="radio-btns__item">
+                                                    <input type="radio" name="packing" id="packing3">
+                                                    <label for="packing3">
+                                                        <span class="shipping-details__packing">
+                                                            Палетный борт
+                                                            <svg width="16" height="16" viewBox="0 0 16 16">
+                                                                <use href="sprite.svg#infoFill"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal add-address__modal" id="add-address__modal">
+                                    <div class="modal__header">
+                                        <strong>Новый адрес доставки</strong>
+                                        <button class="modal__close" data-modal-close>
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#close"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal__body">
+                                        <form action="" name="add-address" class="login-form add-address-form">
+                                            <div class="login-form__group">
+                                                <div class="login-form__input">
+                                                    <label for="">ФИО</label>
+                                                    <input type="text" name="name"
+                                                        placeholder="Константинов Константин Константинович"
+                                                        autocomplete="name" required>
+                                                    <span class="error-message"></span>
+                                                </div>
+                                                <div class="login-form__input">
+                                                    <label for="" class="passport-label">Серия и номер паспорта
+                                                        <div>
+                                                            <button class="passport-btn">
+                                                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                                                    <use href="sprite.svg#info"></use>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="passport-hint__text">
+                                                                <span>Подсказки по заполнению поля паспорта</span>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                    <input type="text" name="pasport" placeholder="0000 000000"
+                                                        required>
+                                                    <span class="error-message"></span>
+                                                </div>
+                                                <div class="login-form__input">
+                                                    <label for="">Номер телефона</label>
+                                                    <input type="tel" name="phone" id="phone">
+                                                    <span class="error">Неверное количество символов</span>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="add-address-form__select">
+                                                        <label for="">Страна</label>
+                                                        <select id="usershippingaddress-country" name="">
+                                                            <option value="">Не выбрано</option>
+                                                            <option value="1">Afghanistan</option>
+                                                            <option value="2">Albania</option>
+                                                            <option value="3">Algeria</option>
+                                                            <option value="4">Andorra</option>
+                                                            <option value="5">Angola</option>
+                                                            <option value="6">Antarctica</option>
+                                                            <option value="7">Argentina</option>
+                                                            <option value="8">Armenia</option>
+                                                            <option value="9">Aruba</option>
+                                                            <option value="10">Australia</option>
+                                                            <option value="11">Austria</option>
+                                                            <option value="12">Azerbaijan</option>
+                                                            <option value="13">Bahrain</option>
+                                                            <option value="14">Bangladesh</option>
+                                                            <option value="15">Belarus</option>
+                                                            <option value="16">Belgium</option>
+                                                            <option value="17">Belize</option>
+                                                            <option value="18">Benin</option>
+                                                            <option value="19">Bhutan</option>
+                                                            <option value="20">Bolivia</option>
+                                                            <option value="21">Bosnia and Herzegovina</option>
+                                                            <option value="22">Botswana</option>
+                                                            <option value="23">Brazil</option>
+                                                            <option value="24">Brunei</option>
+                                                            <option value="25">Bulgaria</option>
+                                                            <option value="26">Burkina Faso</option>
+                                                            <option value="27">Burma (Myanmar)</option>
+                                                            <option value="28">Burundi</option>
+                                                            <option value="29">Cambodia</option>
+                                                            <option value="30">Cameroon</option>
+                                                            <option value="31">Cape Verde</option>
+                                                            <option value="32">Central African Republic</option>
+                                                            <option value="33">Chad</option>
+                                                            <option value="34">Chile</option>
+                                                            <option value="35">China</option>
+                                                            <option value="36">Colombia</option>
+                                                            <option value="37">Comoros</option>
+                                                            <option value="38">Cook Islands</option>
+                                                            <option value="39">Costa Rica</option>
+                                                            <option value="40">Croatia</option>
+                                                            <option value="41">Cuba</option>
+                                                            <option value="42">Cyprus</option>
+                                                            <option value="43">Czech Republic</option>
+                                                            <option value="44">Democratic Republic of the Congo</option>
+                                                            <option value="45">Denmark</option>
+                                                            <option value="46">Djibouti</option>
+                                                            <option value="47">Ecuador</option>
+                                                            <option value="48">Egypt</option>
+                                                            <option value="49">El Salvador</option>
+                                                            <option value="50">Equatorial Guinea</option>
+                                                            <option value="51">Eritrea</option>
+                                                            <option value="52">Estonia</option>
+                                                            <option value="53">Ethiopia</option>
+                                                            <option value="54">Falkland Islands</option>
+                                                            <option value="55">Faroe Islands</option>
+                                                            <option value="56">Fiji</option>
+                                                            <option value="57">Finland</option>
+                                                            <option value="58">France</option>
+                                                            <option value="59">French Polynesia</option>
+                                                            <option value="60">Gabon</option>
+                                                            <option value="61">Gambia</option>
+                                                            <option value="62">Gaza Strip</option>
+                                                            <option value="63">Georgia</option>
+                                                            <option value="64">Germany</option>
+                                                            <option value="65">Ghana</option>
+                                                            <option value="66">Gibraltar</option>
+                                                            <option value="67">Greece</option>
+                                                            <option value="68">Greenland</option>
+                                                            <option value="69">Guatemala</option>
+                                                            <option value="70">Guinea</option>
+                                                            <option value="71">Guinea-Bissau</option>
+                                                            <option value="72">Guyana</option>
+                                                            <option value="73">Haiti</option>
+                                                            <option value="74">Honduras</option>
+                                                            <option value="75">Hong Kong</option>
+                                                            <option value="76">Hungary</option>
+                                                            <option value="77">Iceland</option>
+                                                            <option value="78">India</option>
+                                                            <option value="79">Indonesia</option>
+                                                            <option value="80">Iran</option>
+                                                            <option value="81">Iraq</option>
+                                                            <option value="82">Ireland</option>
+                                                            <option value="83">Israel</option>
+                                                            <option value="84">Italy</option>
+                                                            <option value="85">Ivory Coast</option>
+                                                            <option value="86">Japan</option>
+                                                            <option value="87">Jordan</option>
+                                                            <option value="88">Kenya</option>
+                                                            <option value="89">Kiribati</option>
+                                                            <option value="90">Kuwait</option>
+                                                            <option value="91">Kyrgyzstan</option>
+                                                            <option value="92">Laos</option>
+                                                            <option value="93">Latvia</option>
+                                                            <option value="94">Lebanon</option>
+                                                            <option value="95">Lesotho</option>
+                                                            <option value="96">Liberia</option>
+                                                            <option value="97">Libya</option>
+                                                            <option value="98">Liechtenstein</option>
+                                                            <option value="99">Lithuania</option>
+                                                            <option value="100">Luxembourg</option>
+                                                            <option value="101">Macau</option>
+                                                            <option value="102">Macedonia</option>
+                                                            <option value="103">Madagascar</option>
+                                                            <option value="104">Malawi</option>
+                                                            <option value="105">Malaysia</option>
+                                                            <option value="106">Maldives</option>
+                                                            <option value="107">Mali</option>
+                                                            <option value="108">Malta</option>
+                                                            <option value="109">Marshall Islands</option>
+                                                            <option value="110">Mauritania</option>
+                                                            <option value="111">Mauritius</option>
+                                                            <option value="112">Mayotte</option>
+                                                            <option value="113">Mexico</option>
+                                                            <option value="114">Micronesia</option>
+                                                            <option value="115">Moldova</option>
+                                                            <option value="116">Monaco</option>
+                                                            <option value="117">Mongolia</option>
+                                                            <option value="118">Montenegro</option>
+                                                            <option value="119">Morocco</option>
+                                                            <option value="120">Mozambique</option>
+                                                            <option value="121">Namibia</option>
+                                                            <option value="122">Nauru</option>
+                                                            <option value="123">Nepal</option>
+                                                            <option value="124">Netherlands</option>
+                                                            <option value="125">Netherlands Antilles</option>
+                                                            <option value="126">New Caledonia</option>
+                                                            <option value="127">New Zealand</option>
+                                                            <option value="128">Nicaragua</option>
+                                                            <option value="129">Niger</option>
+                                                            <option value="130">Nigeria</option>
+                                                            <option value="131">Niue</option>
+                                                            <option value="132">Norfolk Island</option>
+                                                            <option value="134">Norway</option>
+                                                            <option value="135">Oman</option>
+                                                            <option value="136">Pakistan</option>
+                                                            <option value="137">Palau</option>
+                                                            <option value="138">Panama</option>
+                                                            <option value="139">Papua New Guinea</option>
+                                                            <option value="140">Paraguay</option>
+                                                            <option value="141">Peru</option>
+                                                            <option value="142">Philippines</option>
+                                                            <option value="143">Pitcairn Islands</option>
+                                                            <option value="144">Poland</option>
+                                                            <option value="145">Portugal</option>
+                                                            <option value="146">Qatar</option>
+                                                            <option value="147">Republic of the Congo</option>
+                                                            <option value="148">Romania</option>
+                                                            <option value="149">Russia</option>
+                                                            <option value="150">Rwanda</option>
+                                                            <option value="151">Saint Barthelemy</option>
+                                                            <option value="152">Saint Helena</option>
+                                                            <option value="153">Saint Pierre and Miquelon</option>
+                                                            <option value="154">Samoa</option>
+                                                            <option value="155">San Marino</option>
+                                                            <option value="156">Sao Tome and Principe</option>
+                                                            <option value="157">Saudi Arabia</option>
+                                                            <option value="158">Senegal</option>
+                                                            <option value="159">Serbia</option>
+                                                            <option value="160">Seychelles</option>
+                                                            <option value="161">Sierra Leone</option>
+                                                            <option value="162">Singapore</option>
+                                                            <option value="163">Slovakia</option>
+                                                            <option value="164">Slovenia</option>
+                                                            <option value="165">Solomon Islands</option>
+                                                            <option value="166">Somalia</option>
+                                                            <option value="167">South Africa</option>
+                                                            <option value="168">Korea</option>
+                                                            <option value="169">Spain</option>
+                                                            <option value="170">Sri Lanka</option>
+                                                            <option value="171">Sudan</option>
+                                                            <option value="172">Suriname</option>
+                                                            <option value="173">Swaziland</option>
+                                                            <option value="174">Sweden</option>
+                                                            <option value="175">Switzerland</option>
+                                                            <option value="176">Syria</option>
+                                                            <option value="177">Taiwan</option>
+                                                            <option value="178">Tajikistan</option>
+                                                            <option value="179">Tanzania</option>
+                                                            <option value="180">Thailand</option>
+                                                            <option value="181">Saipan</option>
+                                                            <option value="182">Togo</option>
+                                                            <option value="183">Tokelau</option>
+                                                            <option value="184">Tonga</option>
+                                                            <option value="185">Tunisia</option>
+                                                            <option value="186">Turkey</option>
+                                                            <option value="187">Turkmenistan</option>
+                                                            <option value="188">Tuvalu</option>
+                                                            <option value="189">Uganda</option>
+                                                            <option value="190">Ukraine</option>
+                                                            <option value="191">United Arab Emirates</option>
+                                                            <option value="192">United Kingdom</option>
+                                                            <option value="193">Canada</option>
+                                                            <option value="194">Uruguay</option>
+                                                            <option value="195">Uzbekistan</option>
+                                                            <option value="196">Vanuatu</option>
+                                                            <option value="197">Venezuela</option>
+                                                            <option value="198">Vietnam</option>
+                                                            <option value="199">Wallis and Futuna</option>
+                                                            <option value="200">West Bank</option>
+                                                            <option value="201">Yemen</option>
+                                                            <option value="202">Zambia</option>
+                                                            <option value="203">Zimbabwe</option>
+                                                            <option value="204">Trinidad and Tobago</option>
+                                                            <option value="205">Guam</option>
+                                                            <option value="206">Jamaica</option>
+                                                            <option value="207">United States</option>
+                                                            <option value="208">Barbados</option>
+                                                            <option value="210">Côte d’Ivoire</option>
+                                                            <option value="211">Timor-Leste</option>
+                                                            <option value="212">Puerto Rico</option>
+                                                            <option value="213">Antigua</option>
+                                                            <option value="214">Anguilla</option>
+                                                            <option value="215">Bahamas</option>
+                                                            <option value="216">Barbuda</option>
+                                                            <option value="217">Bermuda</option>
+                                                            <option value="218">Grenada</option>
+                                                            <option value="219">Guadeloupe</option>
+                                                            <option value="220">Dominica</option>
+                                                            <option value="221">Dominican Republic</option>
+                                                            <option value="222">Cayman Islands</option>
+                                                            <option value="223">Slovak Republic</option>
+                                                            <option value="224">Faeroe Islands</option>
+                                                            <option value="225">Canary Islands</option>
+                                                            <option value="226">Kazakhstan</option>
+                                                            <option value="227">British Virgin Islands</option>
+                                                            <option value="228">Martinique</option>
+                                                            <option value="229">Northern Mariana Islands</option>
+                                                            <option value="230">Scotland</option>
+                                                            <option value="231">Vatican City</option>
+                                                            <option value="232">Tahiti</option>
+                                                            <option value="233">Kosovo</option>
+                                                            <option value="234">French Guiana</option>
+                                                            <option value="235">Antigua and Barbuda</option>
+                                                            <option value="236">kirghizia</option>
+                                                            <option value="237">Reunion</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="login-form__input">
+                                                        <label for="">Почтовый индекс</label>
+                                                        <input type="text" name="postal-code" placeholder="Не выбрано"
+                                                            required>
+                                                        <span class="error-message"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="login-form__input">
+                                                    <label for="">Адрес</label>
+                                                    <textarea name="address" id="" placeholder="Введите адрес"
+                                                        required></textarea>
+                                                    <span class="error-message"></span>
+                                                </div>
+                                            </div>
+                                            <div class="account-form__footer">
+                                                <button class="btn-clear" type="reset" data-modal-close>Отмена</button>
+                                                <button type="submit" class="login-form__submit" disabled>Сохранить
+                                                    адрес</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__total new-parcel__fixed">
+                        <button type="button" class="btn main-btn" disabled>Перейти к оформлению</button>
+                        <div class="span-note cart__total-note">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#infoFill"></use>
+                            </svg>
+                            <small>Выберите заказы готовые к отправке</small>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__col footer__col-first">
+                    <a href="#" class="footer__logo"><img src="img/logo-full.png" alt=""></a>
+                    <div class="footer__payment-systems">
+                        <img src="img/PayPal-logo.svg" alt="">
+                        <div class="d-flex">
+                            <img src="img/visa.svg" alt="">
+                            <img src="img/master.svg" alt="">
+                            <img src="img/amex.svg" alt="">
+                            <img src="img/discover.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer__store-logos">
+                        <img src="img/yahoo-logo.svg" alt="">
+                        <img src="img/rakuten-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Компания</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Условия предоставления услуги</a></li>
+                        <li><a href="#">Политика конфиденцальности</a></li>
+                        <li><a href="#">Политика возвратов</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Личный кабинет</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Моя страница</a></li>
+                        <li><a href="#">Мой аукцион</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Посылки</a></li>
+                        <li><a href="#">Служба поддержки</a></li>
+                    </ul>
+                    <hr>
+                    <h5 class="footer__col-title">Сервисы</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Калькулятор доставки</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Контакты</h5>
+                    <div class="footer-accordion">
+                        <div class="footer__contacts">
+                            <p>Onteco Co., Ltd. - Tanuki Shop International Sales </p>
+                            <address>Address: 939-0304, Japan, Toyama prefecture, Imizu, Kosugi Shiraishi 638
+                            </address>
+                            <div class="d-flex">
+                                <div><span>Центр поддержки клиентов</span></div>
+                                <div>
+                                    <span>9:00 – 18:00</span>
+                                    <small>время по Японии</small>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="footer__divider"></span>
+                        <div class="footer__telegram">
+                            <small>Только для сообщений</small>
+                            <dl>
+                                <dt><img src="img/telegram.svg" alt=""> Telegram</dt>
+                                <dd>
+                                    <a href="#">+81 80-4380-1212</a>
+                                    <small>вопросы обработки посылок, отправок</small>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright">Copyright © 2025 Tanukishop.com. All Rights Reserved. Company registration number:
+                    3230001014477</p>
+                <a href="#" target="_blank"><img src="img/insta.svg" alt=""></a>
+            </div>
+        </footer>
+
+        <div class="mobile-nav tablet-only">
+            <nav class="d-flex">
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#home"></use>
+                    </svg>
+                    <span>Главная</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#auction"></use>
+                    </svg>
+                    <span>Аукционы</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#cart"></use>
+                    </svg>
+                    <span>Корзина</span>
+                </a>
+                <div class="mobile-nav__item notes-trigger">
+                    <div class="header-btns__icon">
+                        <svg viewBox="0 0 25 24" width="25" height="24">
+                            <use href="/sprite.svg#notes"></use>
+                        </svg>
+                        <span>6</span>
+                    </div>
+                    <span>Уведомления</span>
+                </div>
+                <a href="#" class="mobile-nav__item mobile-nav__login">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Войти</span>
+                </a>
+                <a href="#" class="mobile-nav__item mobile-nav__profile current">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Профиль</span>
+                </a>
+            </nav>
+        </div>
+
+    </div>
+    <div class="modal-overlay"></div>
+    <div class="mobile-search-modal">
+        <div class="mobile-search-modal__header">
+            <button class="mobile-search-modal__back">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use href="sprite.svg#arr-left"></use>
+                </svg>
+            </button>
+            <form class="mobile-search-modal__form">
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <use href="sprite.svg#search"></use>
+                </svg>
+                <input type="text" id="mobile-search-input" placeholder="Найти товары" autofocus>
+            </form>
+        </div>
+        <div class="mobile-search-modal__content">
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus only-auth">
+                <div class="mobile-search-modal__title">Вы искали</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Мотоциклы аукцион
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Японская косметика оптом
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Часы Seiko бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Диски на авто с аукциона
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Фотоаппараты Canon бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus">
+                <div class="mobile-search-modal__title">Часто ищут</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        iPhone б/у Япония
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Casio G-Shock оригинал аукцион
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Роботы-пылесос с аукциона
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Лот японская посуда
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Шины бу Япония
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__focus">
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>аукцион Япония</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>под заказ из Японии</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>с пробегом Япония</b>
+                    </li>
+                </ul>
+                <div class="mobile-search-modal__title">Перейти в раздел</div>
+                <div class="mobile-search-modal__parts">
+                    <div class="mobile-search-modal__categories">
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Автомобили</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Мотоциклы</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Запчасти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="totop">
+        <svg width="20" height="20" viewBox="0 0 20 20">
+            <use href="sprite.svg#arrow"></use>
+        </svg>
+    </div>
+    <div class="cookies-note d-flex">
+        <img src="img/Info.svg" alt="">
+        <div>
+            <p>Мы используем <a href="#">cookies</a>, чтобы сохранять ваш поиск, рекомендовать
+                полезное и создавать другие удобства на сайте</p>
+            <button type="button" class="cookies-note__agree">Ок</button>
+        </div>
+        <button class="cookies-note__close">
+            <svg viewBox="0 0 16 16" width="16" height="16">
+                <use href="sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

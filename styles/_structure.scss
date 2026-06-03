@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Onest", serif;
+  font-weight: 400;
+  font-style: normal;
+  min-width: 360px;
+  background-color: $baseBackground;
+  color: $textSecondary;
+  font-size: 16px;
+  line-height: 1.25;
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+// display
+@each $v in none, inline, block, inline-block, flex, inline-flex, grid,
+inline-grid {
+  .d-#{$v} {
+    display: $v;
+  }
+}
+
+// position
+@each $v in relative, absolute, fixed, sticky {
+  .p-#{$v} {
+    position: $v;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+      overflow: hidden;
+}

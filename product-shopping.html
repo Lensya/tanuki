@@ -1,0 +1,2133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tanukishop</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="auth">
+    <div class="container">
+
+        <header class="header">
+            <div class="header__first-row tablet-none">
+                <div class="d-flex">
+                    <nav class="top-menu">
+                        <ul>
+                            <li><a href="#" class="top-menu__item">О компании</a></li>
+                            <li><a href="#" class="top-menu__item">Стоимость</a></li>
+                            <li><a href="#" class="top-menu__item">Доставка</a></li>
+                            <li><a href="#" class="top-menu__item">Контакты</a></li>
+                            <li><a href="#" class="top-menu__item-highlighted">Авто из Японии</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-bar">
+                        <div class="top-bar__time time-msk">
+                            <b>10:00</b> в Москве
+                        </div>
+                        <div class="top-bar__time time-jpn">
+                            <b>10:00</b> в Японии
+                        </div>
+                        <div class="wallet">
+                            Кошелек
+                            <div class="wallet__balance">10,300 RUB</div>
+                        </div>
+                        <div class="exch-rate">
+                            <span>1$ = 144.78¥</span>
+                            <span>100¥ = 68.75Р</span>
+                        </div>
+                        <div class="d-flex top-bar__dropdowns">
+                            <div class="currency dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>₽ RUB</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-currency">
+                                    <ul>
+                                        <li><a href="#">¥ JPY</a></li>
+                                        <li class="current"><a href="#">₽ RUB</a></li>
+                                        <li><a href="#">$ USD</a></li>
+                                        <li><a href="#">元 CNY</a></li>
+                                        <li><a href="#">€ EUR</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="language dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>RU</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-language">
+                                    <ul>
+                                        <li class="current"><a href="#">
+                                                <span>Russian</span>
+                                                <span>Русский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>English</span>
+                                                <span>Английский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>Chinese</span>
+                                                <span>中文</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__second-row">
+                <div class="d-flex">
+                    <a href="#" class="logo">
+                        <img src="img/Tanuki.svg" alt="">
+                        <img src="img/tanuki-title.svg" alt="" class="tablet-none">
+                    </a>
+                    <div class="search-row">
+                        <div class="select-store dropdown tablet-none">
+                            <a href="#" class="btn header-btn dropdown-toggle"><span class="select-store__title">Y!
+                                    Auctions</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-store">
+                                <ul>
+                                    <li class="current"><a href="#">Y! Auctions</a></li>
+                                    <li><a href="#">Y! Shopping</a></li>
+                                    <li><a href="#">Racuten</a></li>
+                                    <li><a href="#">Croooober</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-category tablet-none">
+                            <a href="#" class="btn light-btn js-select-category">
+                                <span class="select-category__title">Все категории</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="select-cats-modal">
+                                <div class="select-cats-modal__header">
+                                    <div class="select-cats-modal__header-title">Выберите категорию для поиска</div>
+                                    <button class="select-cats-modal__header-close">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="select-cats-modal__body">
+                                    <ul class="select-cats-modal__list">
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#search"></use>
+                                            </svg><span>Все категории</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#bit-tech"></use>
+                                            </svg><span>Бытовая техника</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#fanats"></use>
+                                            </svg><span>Товары для фанатов</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#beauty"></use>
+                                            </svg><span>Красота и здоровье</span>
+                                        </li>
+
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#gardening"></use>
+                                            </svg><span>Садоводство</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#games"></use>
+                                            </svg><span>Игры и игрушки</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#sport"></use>
+                                            </svg><span>Спорт и отдых</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#hobby"></use>
+                                            </svg><span>Хобби и увлечения</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="search-form">
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="tablet-only">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                            <input type="text" name="search"
+                                placeholder="Модель кузова, поисковое слово или номер лота">
+                            <button class="btn header-btn tablet-none">
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#search"></use>
+                                </svg>
+                                <span>Найти</span></button>
+                        </form>
+                    </div>
+                    <div class="mobile-menu__trigger tablet-only">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#burger"></use>
+                        </svg>
+                    </div>
+                    <div class="header-btns">
+                        <a href="#" class="header-btns__item">
+                            <svg viewBox="0 0 25 24" width="25" height="24">
+                                <use href="sprite.svg#support"></use>
+                            </svg>
+                            <span>Поддержка</span>
+                        </a>
+                        <div class="header-btns__item header-btns__notes">
+                            <div class="notes-btn">
+                                <div class="header-btns__icon">
+                                    <svg viewBox="0 0 25 24" width="25" height="24">
+                                        <use href="/sprite.svg#notes"></use>
+                                    </svg>
+                                    <span>5</span>
+                                </div>
+                                <span>Уведомления</span>
+                            </div>
+
+                            <div class="notes-tooltip">
+                                <div class="notes-title">
+                                    <strong>Уведомления <span>(5)</span></strong>
+                                    <button class="notes-close tablet-only">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="notes-body">
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="header-btns__item header-btns__profile">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="sprite.svg#profile"></use>
+                            </svg>
+                            <span>Профиль</span>
+                        </a>
+                        <a href="#" class="header-btns__item">
+                            <div class="header-btns__icon">
+                                <svg viewBox="0 0 25 24" width="25" height="24">
+                                    <use href="/sprite.svg#cart"></use>
+                                </svg>
+                                <span>20</span>
+                            </div>
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                    <a href="#" class="btn header-btn login-btn tablet-none">Войти</a>
+                </div>
+                <div class="modal-header-overlay"></div>
+            </div>
+            <div class="header__third-row tablet-none">
+                <div class="d-flex">
+                    <nav class="cats-menu">
+                        <ul class="menu">
+                            <li class="has-child"><a href="#" class="menu__item">Автозапчасти</a>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                                <ul class="submenu">
+                                    <li><a href="#" class="menu__item">Поиск на аукционе</a></li>
+                                    <li><a href="#" class="menu__item">Заказ новых запчастей</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu__item">Шины и диски</a></li>
+                            <li><a href="#" class="menu__item">Мототехника</a></li>
+                            <li class="menu__item menu__item--more">
+                                <span class="menu-more-title">Еще</span>
+                                <ul class="mobile-submenu menu">
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Спорт и отдых</a>
+                                    </li>
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Аниме товары</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="#" class="menu__item">Спорт и отдых</a></li>
+                            <li><a href="#" class="menu__item">Аниме товары</a></li> -->
+                        </ul>
+                    </nav>
+                    <nav class="stores-menu">
+                        <ul class="menu">
+                            <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                            <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                            <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                            <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                            <li><a href="#" class="menu__item">Другие магазины</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-menu tablet-only">
+                <div class="mobile-menu__head">
+                    <a href="#" class="mobile-menu__logo">
+                        <img src="img/Tanuki.svg" alt="">
+                    </a>
+                    <a href="#" class="mobile-menu__user">
+                        <img src="img/ava.svg" alt="" class="mobile-menu__avatar">
+                        <span class="mobile-menu__name">Константин</span>
+                    </a>
+                    <a href="#" class="btn header-btn login-btn">Войти</a>
+                    <button class="mobile-menu__close">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="">
+                    <ul class="">
+                        <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                        <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                        <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                        <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                        <li><a href="#" class="menu__item">Другие магазины</a></li>
+                    </ul>
+                </nav>
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="menu__item">О компании</a></li>
+                        <li><a href="#" class="menu__item">Стоимость</a></li>
+                        <li><a href="#" class="menu__item">Доставка</a></li>
+                        <li><a href="#" class="menu__item">Контакты</a></li>
+                        <li><a href="#" class="menu__item menu__item-highlighted">Авто из Японии</a></li>
+                        <li><a href="#" class="menu__item">Поддержка</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__bottom">
+                    <div class="exch-rate">
+                        <span>1$ = 144.78¥</span>
+                        <span>100¥ = 68.75Р</span>
+                    </div>
+                    <div class="wallet">
+                        <strong>Кошелек</strong>
+                        <div class="wallet__balance">10,300 RUB</div>
+                    </div>
+                    <div class="mobile-menu__language">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Язык</strong>
+                            <span>Русский</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Язык</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li class="current"><a href="#">Russian (Русский)</a></li>
+                                <li><a href="#">English (English)</a></li>
+                                <li><a href="#">Chinese (中文)</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu__currency">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Валюта</strong>
+                            <span>RUB</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Валюта</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li><a href="#">¥ JPY</a></li>
+                                <li class="current"><a href="#">₽ RUB</a></li>
+                                <li><a href="#">$ USD</a></li>
+                                <li><a href="#">元 CNY</a></li>
+                                <li><a href="#">€ EUR</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__overlay"></div>
+            </div>
+        </header>
+
+        <main class="single">
+
+            <ul class="breadcrumbs">
+                <li><a href="#">Y! Auctions</a></li>
+                <li><a href="#">Бытовая техника</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">Однообъективные зеркальные</a></li>
+                <li><a href="#">С ручным фокусом</a></li>
+                <li class="current-item"><span>Pentax</span></li>
+            </ul>
+            <div class="product">
+
+                <div class="alert warning">
+                    <img src="img/warning.svg" alt="">
+                    Беспроводные устройства НЕВОЗМОЖНО ввезти в Россию и Беларусь
+                    <button class="alert-close">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <section class="product__main">
+                    <div class="product__gallery">
+                        <div thumbsSlider="" class="swiper productGallery">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/single/single.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/single/thumb2.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/single/thumb3.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/single/thumb4.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/single/thumb5.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/single/single.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/single/thumb2.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/single/thumb3.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/single/thumb4.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/single/thumb5.jpg">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper productGallery2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="img/single/single.jpg">
+                                        <img src="img/single/single.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/single/singleBig.jpg">
+                                        <img src="img/single/singleBig.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/single/thumb3.jpg">
+                                        <img src="img/single/thumb3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/single/thumb4.jpg">
+                                        <img src="img/single/thumb4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/single/thumb5.jpg">
+                                        <img src="img/single/thumb5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/single/singleBig.jpg">
+                                        <img src="img/single/singleBig.jpg" alt="6">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/single/thumb2.jpg">
+                                        <img src="img/single/thumb2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/single/thumb3.jpg">
+                                        <img src="img/single/thumb3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/single/thumb4.jpg">
+                                        <img src="img/single/thumb4.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="product__summary">
+                        <div class="product__content">
+                            <div class="product__title">
+                                <h1>[Редкий] Asahi Pentax AP S Номер 156173 Пленочная камера Asahi Pentax K315</h1>
+                                <a href="#">
+                                    Страница товара на сайта магазина <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#link"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="product__options">
+                                <div class="product__option-group">
+                                    <div class="product__option-label">Цвет <span
+                                            class="product__option-value">Серый</span></div>
+                                    <div class="product__colors">
+                                        <button class="color-btn active" aria-label="Серый">
+                                            <span style="background:#8C8C8C;"></span>
+                                        </button>
+                                        <button class="color-btn" aria-label="Розовый">
+                                            <span style="background:#FF9BF5;"></span>
+                                        </button>
+                                        <button class="color-btn" aria-label="Оранжевый">
+                                            <span style="background:#f90;"></span>
+                                        </button>
+                                        <button class="color-btn" aria-label="Красный">
+                                            <span style="background:#EB392F;"></span>
+                                        </button>
+                                        <button class="color-btn" aria-label="Коричневый">
+                                            <span style="background:#864327;"></span>
+                                        </button>
+                                        <button class="color-btn" aria-label="Жёлтый">
+                                            <span style="background:#FDC559;"></span>
+                                        </button>
+                                        <button class="color-btn" aria-label="Зелёный">
+                                            <span style="background:#439354;"></span>
+                                        </button>
+                                        <button class="color-btn" aria-label="Голубой">
+                                            <span style="background:#7BBBF5;"></span>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="product__option-link" data-modal-open="select-colors-modal">Все
+                                        15 цветов</a>
+                                    <div class="select-colors-modal modal" id="select-colors-modal">
+                                        <div class="select-colors-modal__header">
+                                            <div class="select-colors-modal__header-title">Все варианты товара</div>
+                                            <button class="modal__close" data-modal-close>
+                                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                                    <use href="sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="option-modal__body">
+                                            <div class="option-modal__product">
+                                                <img src="img/single/single.jpg" alt="">
+                                                <div>
+                                                    <div class="option-modal__price">
+                                                        <strong class="main">₽ 1,567,564</strong>
+                                                        <strong class="usd">$19,319.91</strong>
+                                                    </div>
+                                                    <div class="option-modal__title">
+                                                        [Редкий] Asahi Pentax AP S Номер 156173 Пленочная камера Asahi
+                                                        Pentax K315
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="select-colors-modal__label">Цвет <span>Серый</span></div>
+                                            <div class="select-colors-modal__colors">
+                                                <button class="color-btn" aria-label="Розовый">
+                                                    <span style="background:#FF9BF5;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Оранжевый">
+                                                    <span style="background:#f90;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Красный">
+                                                    <span style="background:#EB392F;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Коричневый">
+                                                    <span style="background:#864327;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Жёлтый">
+                                                    <span style="background:#FDC559;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Зелёный">
+                                                    <span style="background:#439354;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Голубой">
+                                                    <span style="background:#7BBBF5;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Розовый">
+                                                    <span style="background:#FF9BF5;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Оранжевый">
+                                                    <span style="background:#f90;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Красный">
+                                                    <span style="background:#EB392F;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Коричневый">
+                                                    <span style="background:#864327;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Жёлтый">
+                                                    <span style="background:#FDC559;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Голубой">
+                                                    <span style="background:#7BBBF5;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Розовый">
+                                                    <span style="background:#FF9BF5;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Оранжевый">
+                                                    <span style="background:#f90;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Красный">
+                                                    <span style="background:#EB392F;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Коричневый">
+                                                    <span style="background:#864327;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Жёлтый">
+                                                    <span style="background:#FDC559;"></span>
+                                                </button>
+                                                <button class="color-btn" aria-label="Черный">
+                                                    <span style="background:#000;"></span>
+                                                </button>
+                                            </div>
+                                            <div class="option-modal__actions">
+                                                <button class="btn btn-cancel" data-modal-close>Отмена</button>
+                                                <button class="btn main-btn" data-modal-close>Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__option-group">
+                                    <div class="product__option-label">Оптическая сила <span
+                                            class="product__option-value">+2.00</span></div>
+                                    <div class="product__powers">
+                                        <button class="power-btn">+1.75</button>
+                                        <button class="power-btn active">+2.00</button>
+                                        <button class="power-btn">+2.25</button>
+                                        <button class="power-btn">+2.50</button>
+                                        <button class="power-btn">+3.00</button>
+                                        <button class="power-btn">+3.25</button>
+                                        <button class="power-btn">+3.50</button>
+                                        <button class="power-btn">-2.00</button>
+                                        <button class="power-btn">-1.75</button>
+                                        <button class="power-btn">-1.50</button>
+                                    </div>
+                                    <a href="#" class="product__option-link" data-modal-open="select-powers-modal">Все
+                                        49 цветов</a>
+                                    <div class="select-powers-modal modal" id="select-powers-modal">
+                                        <div class="select-powers-modal__header">
+                                            <div class="select-powers-modal__header-title">Все варианты товара</div>
+                                            <button class="modal__close" data-modal-close>
+                                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                                    <use href="sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="option-modal__body">
+                                            <div class="option-modal__product">
+                                                <img src="img/single/single.jpg" alt="">
+                                                <div>
+                                                    <div class="option-modal__price">
+                                                        <strong class="main">₽ 1,567,564</strong>
+                                                        <strong class="usd">$19,319.91</strong>
+                                                    </div>
+                                                    <div class="option-modal__title">
+                                                        [Редкий] Asahi Pentax AP S Номер 156173 Пленочная камера Asahi
+                                                        Pentax K315
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="select-powers-modal__label">Оптическая сила <span>+2.00</span>
+                                            </div>
+                                            <div class="select-powers-modal__powers">
+                                                <button class="power-btn">+1.75</button>
+                                                <button class="power-btn active">+2.00</button>
+                                                <button class="power-btn">+2.25</button>
+                                                <button class="power-btn">+2.50</button>
+                                                <button class="power-btn">+3.00</button>
+                                                <button class="power-btn">+3.25</button>
+                                                <button class="power-btn">+3.50</button>
+                                                <button class="power-btn">-2.00</button>
+                                                <button class="power-btn">-1.75</button>
+                                                <button class="power-btn">-1.50</button>
+                                                <button class="power-btn">-1.50</button>
+                                                <button class="power-btn">-1.50</button>
+                                                <button class="power-btn">-1.50</button>
+                                                <button class="power-btn">-1.50</button>
+                                                <button class="power-btn">-1.50</button>
+                                                <button class="power-btn">-1.50</button>
+                                                <!-- ... остальные значения ... -->
+                                            </div>
+                                            <div class="option-modal__actions">
+                                                <button class="btn btn-cancel" data-modal-close>Отмена</button>
+                                                <button class="btn main-btn" data-modal-close>Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__details-title">
+                                <strong>О товаре</strong>
+                                <a href="#" class="to-descript">Перейти к описанию <svg viewBox="0 0 16 16" width="16"
+                                        height="16">
+                                        <use href="sprite.svg#shevron-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <dl class="product__auction-details">
+                                <div>
+                                    <dt>Доставка по Японии
+                                        <span aria-hidden="true"></span>
+                                    </dt>
+                                    <dd class="free">
+                                        Бесплатно
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Состояние
+                                        <span aria-hidden="true"></span>
+                                    </dt>
+                                    <dd>Новый</dd>
+                                </div>
+                                <div>
+                                    <dt>Наличие
+                                        <span aria-hidden="true"></span>
+                                    </dt>
+                                    <dd>Да</a>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Ограничение на заказ
+                                        <span aria-hidden="true"></span>
+                                    </dt>
+                                    <dd>50 шт</dd>
+                                </div>
+                                <div>
+                                    <dt>Рейтинг продавца
+                                        <span aria-hidden="true"></span>
+                                    </dt>
+                                    <dd>
+                                        <a href="#" class="rating">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#star"></use>
+                                            </svg>
+                                            4.9, newryohin-store
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#shevron-right"></use>
+                                            </svg>
+                                        </a>
+                                    </dd>
+                                </div>
+                            </dl>
+
+                        </div>
+                        <div class="product__price-container">
+                            <div class="price-block">
+                                <div class="current-price">
+                                    <span class="label">Текущая цена</span>
+                                    <div class="d-flex">
+                                        <strong>₽ 1,567,564</strong>
+                                        <span>$19 319,91</span>
+                                    </div>
+                                    <small>¥819 Без налога</small>
+                                </div>
+                            </div>
+                            <div class="product__review">
+                                <span>Оставьте отзыв и получите расширенную гарантию на 90 дней!</span>
+                                <div class="review__radio-btns radio-btns">
+                                    <input type="radio" name="review" id="leave" checked>
+                                    <label for="leave">Оставлю отзыв
+                                        <small>Гарантия 90 дней: Расширенная</small>
+                                    </label>
+                                    <input type="radio" name="review" id="noleave">
+                                    <label for="noleave">Не оставлю отзыв
+                                        <small>Гарантия 30 дней: Стандартная</small>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="product__action">
+                                <a href="#" class="btn calc-delivery light-btn">
+                                    <svg width="17" height="16" viewBox="0 0 17 16">
+                                        <use href="sprite.svg#calc"></use>
+                                    </svg> Стоимость доставки по Японии</a>
+                                <div class="d-flex">
+                                    <a href="#" class="btn main-btn">Добавить в корзину</a>
+                                    <button class="product__fav " aria-label="Добавить в избранное">
+                                        <svg width="20" height="20" viewBox="0 0 20 20">
+                                            <use href="sprite.svg#heart-small"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__price-fixed">
+                            <div class="current-price">
+                                <div class="d-flex">
+                                    <strong>₽ 1,567,564</strong>
+                                    <span>$19 319,91</span>
+                                </div>
+                            </div>
+                            <div class="product__action">
+                                <div class="d-flex">
+                                    <a href="#" class="btn main-btn">Добавить в корзину</a>
+                                    <button class="product__fav " aria-label="Добавить в избранное">
+                                        <svg width="20" height="20" viewBox="0 0 20 20">
+                                            <use href="sprite.svg#heart-small"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="product-info">
+                    <div class="product-info__tabs tabs">
+                        <nav class="main-stores__nav">
+                            <ul class="tabs-nav">
+                                <li class="tabs-nav__item active" data-tab="tab1">
+                                    <button class="btn">Описание товара</button>
+                                </li>
+                                <li class="tabs-nav__item " data-tab="tab2">
+                                    <button class="btn">Калькулятор доставки</button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="tabs-content">
+                            <div class="tabs-content__item active" data-tab-content="tab1">
+                                <div class="d-flex product-info__description">
+                                    <div class="description">
+                                        <p>50-е 501XX, золотой размер! Оригинальные винтажные Levi's с гарантией.</p>
+                                        <ul>
+                                            <li>Фактические размеры [в горизонтальном положении]</li>
+                                            <li>Талия = прибл. 41 см [82] 9-е изображение</li>
+                                            <li>Подъем = прибл. 29 см</li>
+                                            <li>Длина внутреннего шва = прибл. 78 см</li>
+                                            <li>Бедро = прибл. 31 см</li>
+                                            <li>Ширина подола = ок. 21 см</li>
+                                            <li>Общая длина = 105 см</li>
+                                        </ul>
+                                        <p>
+                                            *Обратите внимание, что возможны некоторые погрешности из-за любительских
+                                            измерений.
+                                        </p>
+                                        <p>
+                                            На девятом изображении показан обхват талии, измеренный после устранения
+                                            всех морщин и складок для получения точного измерения. Он составляет 42 см.
+                                        </p>
+                                        <p>
+                                            Приведенная выше оценка представляет собой консервативный размер в 41 см,
+                                            что на самом деле немного меньше фактического размера, чтобы избежать
+                                            каких-либо жалоб.
+                                        </p>
+                                        <p>
+                                            Несмотря на то, что изделиям уже столько лет, бумажные накладки все еще
+                                            присутствуют, а естественный цвет индиго, присущий старинным вещам, остается
+                                            ярким, хотя это мое субъективное мнение. Грубая вертикальная потертость
+                                            501XX постепенно стирается, так что он в очень хорошем состоянии!
+                                        </p>
+                                        <p>Ткань также прочная и надежная.</p>
+                                        <p>Длина, конечно, оригинальная!</p>
+                                        <p>Есть небольшой ремонт. *10-е изображение.</p>
+                                        <p>Он был аккуратно отремонтирован с небольшими ремонтными работами.</p>
+                                        <p>
+                                            Вы сможете продолжать носить его с удовольствием в течение длительного
+                                            времени без каких-либо проблем.
+                                        </p>
+                                        <p>
+                                            Это продукт, который в будущем будет только расти в цене и никогда не упадет
+                                            в цене, так почему бы не воспользоваться этой возможностью?
+                                        </p>
+                                        <p>*В настоящее время бумажная заплатка частично отсутствует.</p>
+                                        <p>См. изображение 9.</p>
+                                        <p>Обратите внимание, что это антиквариат 70-летней давности...</p>
+                                        <p><strong>Подробности о товаре</strong></p>
+                                        <ul>
+                                            <li>: 501XX с гарантией Оригинал</li>
+                                            <li>: Нет гравировки на задней стороне верхней пуговицы</li>
+                                            <li>: Скрытая гравировка заклепок 12</li>
+                                            <li>: Медные заклепки на задней стороне переднего кармана</li>
+                                            <li>: Бумажная нашивка [Буква не читается]</li>
+                                            <li>: Короткая пуговица Длина штанины R</li>
+                                            <li>: Ровный V BIGE</li>
+                                            <li>: Передняя V-образная строчка</li>
+                                            <li>: Смещение</li>
+                                            <li>: Красная кромка</li>
+                                            <li>: Одинарный стежок на талии</li>
+                                            <li>: Карман для монет с кромкой</li>
+                                            <li>: Хлопковая нить/Множество желтых стежков</li>
+                                            <li>: Оригинальная длина</li>
+                                        </ul>
+                                        <p>*Перечисленные товары являются бывшими в употреблении и винтажными товарами.
+                                        </p>
+                                        <p>Могут быть небольшие пятна или другие дефекты.</p>
+                                        <p>
+                                            *Если у вас есть вопросы, пожалуйста, задавайте их в комментариях перед
+                                            покупкой.
+                                        </p>
+                                        <p>
+                                            *Во избежание подмены продукции просим вас не подавать никаких жалоб и не
+                                            осуществлять
+                                            возвраты, в том числе возвраты.
+                                        </p>
+                                        <p>#Levi's #</p>
+                                        <p>
+                                            501 #винтаж #оригинал # 501ZXX #501zxx #501XX #501xx #деним #Levis #БОЛЬШОЙ
+                                            #большой
+                                            #Bige
+                                            #BigE # 50s
+                                        </p>
+                                    </div>
+                                    <div class="product-info__note warning">
+                                        <div class="icon">
+                                            <img src="img/circle-info.svg" alt="">
+                                        </div>
+                                        <p>Обратите внимание, что описание товаров на Tanuki Shop выполнено
+                                            с использованием машинного перевода, и мы не несём ответственности
+                                            за возможные ошибки или неточности</p>
+                                    </div>
+                                </div>
+                                <div class="categories__row-btn">
+                                    <a href="#" class="categories__tag">Электротовары для дома</a>
+                                    <a href="#" class="categories__tag">Микроклиматическое оборудование</a>
+                                    <a href="#" class="categories__tag">Кухня</a>
+                                    <a href="#" class="categories__tag">Телефоны, факсы</a>
+                                    <a href="#" class="categories__tag">Красота и здоровье</a>
+                                    <a href="#" class="categories__tag">Утюги, стирка</a>
+                                    <a href="#" class="categories__tag">Аккумуляторы, батареи</a>
+                                    <a href="#" class="categories__tag">Трансформаторы, адаптеры</a>
+                                    <a href="#" class="categories__tag">Часы</a>
+                                    <a href="#" class="categories__tag">Электронные детали</a>
+                                    <a href="#" class="categories__tag">Прочее</a>
+                                </div>
+                            </div>
+                            <div class="tabs-content__item " data-tab-content="tab2">
+                                <h4>Рассчитать доставку</h4>
+                                <div class="shipping-tab">
+                                    <div class="shipping_calculator">
+                                        <form action="" class="shipping__form">
+
+                                            <div class="form-group">
+                                                <label>Цена товара, ₽ RUB:</label>
+                                                <input name="" type="text" value="1,567,564">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Доставка по Японии, ₽ RUB:</label>
+                                                <input name="" type="text" value="1000">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Общий вес, грамм</label>
+                                                <input name="" type="text" value="1000">
+                                            </div>
+
+
+                                            <button class="btn main-btn">Рассчитать</button>
+                                        </form>
+                                        <dl class="shipping__types">
+                                            <div>
+                                                <dt>
+                                                    <strong>Tanuki International</strong>
+                                                    <span class="shipping-price">2,340 ¥</span>
+                                                </dt>
+                                                <dd>60–90 дней с момента отправки
+                                                    <div class="shipping__hint">
+                                                        <button class="shipping__hint-btn">
+                                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                                <use href="sprite.svg#info"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="shipping__hint-text">
+                                                            Доставка только б.у. автозапчастей, аудиотехники и
+                                                            спортивного оборудования. Новые товары по данному тарифу не
+                                                            доставляются
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </div>
+                                            <div>
+                                                <dt>
+                                                    <strong>Обычная почта</strong>
+                                                    <span class="shipping-price">2,600 ¥</span>
+                                                </dt>
+                                                <dd>2–3 месяца</dd>
+                                            </div>
+                                            <div>
+                                                <dt>
+                                                    <strong>EMS International</strong>
+                                                    <span class="shipping-price">2,340 ¥</span>
+                                                </dt>
+                                                <dd>5–7 дней</dd>
+                                            </div>
+                                            <div>
+                                                <dt>
+                                                    <strong>Airmail</strong>
+                                                    <span class="shipping-price">4,200 ¥</span>
+                                                </dt>
+                                                <dd>10–14 дней</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <div class="wholesale-orders">
+                                        <div>
+                                            <h5>Оптовые заказы и международная отправка</h5>
+                                            <p>Для оптовых заказов доступны два типа морской доставки: экспресс и
+                                                эконом.
+                                                Пожалуйста, свяжитесь с нами для обсуждения подробностей и расчета
+                                                стоимости. Мы готовы помочь вам выбрать наиболее подходящий вариант
+                                                отправки.</p>
+                                        </div>
+                                        <div>
+                                            <h5>Центр поддержки клиентов</h5>
+                                            <p>Для любых вопросов по обработке посылок и отправкам, пожалуйста,
+                                                свяжитесь с нами через Telegram</p>
+                                            <div class="contact-row">
+                                                <div>
+                                                    <span>Центр поддержки клиентов</span>
+                                                    <div>
+                                                        <span class="time">9:00 – 18:00</span><br>
+                                                        <small>время по Японии</small>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span>Только для сообщений</span>
+                                                    <div class="modal-telegram">
+                                                        <img src="img/telegram.svg" alt="">
+                                                        <div>
+                                                            <a href="#">+81 80-4380-1212</a><br>
+                                                            <small>вопросы обработки посылок, отправок</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wholesale-orders__btns">
+                                                <a href="#" class="btn">Размеры японской одежды и обуви</a>
+                                                <a href="#" class="btn">Приблизительный вес товаров</a>
+                                                <a href="#" class="btn">О комиссии и стоимости доставки</a>
+                                                <a href="#" class="btn">О международной отправке</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="most-popular">
+                    <div class="section-title d-flex">
+                        <h2>Другие похожие товары</h2>
+                        <a href="#" class="btn light-btn"><span class="mobile-none">Посмотреть все</span>
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#shevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="swiper productsSwiper">
+                        <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp5.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav" aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+                                                    <span class="product-card__label green">Бесплатная доставка</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp3.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav" aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+
+                                                    <span class="product-card__label blue">Новый товар</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp2.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav added"
+                                                    aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+                                                    <span class="product-card__label green">Бесплатная доставка</span>
+                                                    <span class="product-card__label blue">Новый товар</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp3.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav " aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp2.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav " aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+                                                    <span class="product-card__label green">Бесплатная доставка</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp3.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav" aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+                                                    <span class="product-card__label green">Бесплатная доставка</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp5.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav" aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp2.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav " aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+
+                                                    <span class="product-card__label blue">Новый товар</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp5.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav" aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp2.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav added"
+                                                    aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+                                                    <span class="product-card__label green">Бесплатная доставка</span>
+                                                    <span class="product-card__label blue">Новый товар</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <div class="product-card__img-wrap">
+                                                <a href="#">
+                                                    <img src="img/temp3.jpg" alt="" class="product-card__img">
+                                                </a>
+                                                <button class="product-card__fav " aria-label="Добавить в избранное">
+                                                    <svg width="32" height="32" viewBox="0 0 32 32">
+                                                        <use href="sprite.svg#heart"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-card__labels">
+
+                                                    <span class="product-card__label blue">Новый товар</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__body">
+                                                <div class="product-card__price">
+                                                    <span class="main-cur">₽ 1,567</span>
+                                                    <span class="other-cur">$91</span>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a href="#">Беспроводные наушники 2025 года новейшие новейшие
+                                                        новейшие новейшие новейшие
+                                                    </a>
+                                                </h3>
+                                                <div class="product-card__seller">
+                                                    <div class="rating">
+                                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                                            <use href="sprite.svg#star"></use>
+                                                        </svg>
+                                                        4.9
+                                                    </div>
+                                                    <a href="#">newryohin-store</a>
+                                                </div>
+                                                <div class="product-card__action">
+                                                    <a href="#" class="btn main-btn">
+                                                        <svg viewBox="0 0 25 24" width="25" height="24">
+                                                            <use href="sprite.svg#cart"></use>
+                                                        </svg> <span>В корзину</span>
+                                                    </a>
+                                                    <div class="product-card__count">
+                                                        <button type="button" class="count__minus"
+                                                            aria-label="Уменьшить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#minus"></use>
+                                                            </svg></button>
+                                                        <input type="number" name="count" min="0" class="count__numeric"
+                                                            value="1">
+                                                        <button type="button" class="count__plus"
+                                                            aria-label="Увеличить количество"><svg viewBox="0 0 20 20"
+                                                                width="20" height="20">
+                                                                <use href="sprite.svg#plus"></use>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer footer-single">
+            <div class="footer__row">
+                <div class="footer__col footer__col-first">
+                    <a href="#" class="footer__logo"><img src="img/logo-full.png" alt=""></a>
+                    <div class="footer__payment-systems">
+                        <img src="img/PayPal-logo.svg" alt="">
+                        <div class="d-flex">
+                            <img src="img/visa.svg" alt="">
+                            <img src="img/master.svg" alt="">
+                            <img src="img/amex.svg" alt="">
+                            <img src="img/discover.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer__store-logos">
+                        <img src="img/yahoo-logo.svg" alt="">
+                        <img src="img/rakuten-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Компания</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Условия предоставления услуги</a></li>
+                        <li><a href="#">Политика конфиденцальности</a></li>
+                        <li><a href="#">Политика возвратов</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Личный кабинет</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Моя страница</a></li>
+                        <li><a href="#">Мой аукцион</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Посылки</a></li>
+                        <li><a href="#">Служба поддержки</a></li>
+                    </ul>
+                    <hr>
+                    <h5 class="footer__col-title">Сервисы</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Калькулятор доставки</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Контакты</h5>
+                    <div class="footer-accordion">
+                        <div class="footer__contacts">
+                            <p>Onteco Co., Ltd. - Tanuki Shop International Sales </p>
+                            <address>Address: 939-0304, Japan, Toyama prefecture, Imizu, Kosugi Shiraishi 638
+                            </address>
+                            <div class="d-flex">
+                                <div><span>Центр поддержки клиентов</span></div>
+                                <div>
+                                    <span>9:00 – 18:00</span>
+                                    <small>время по Японии</small>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="footer__divider"></span>
+                        <div class="footer__telegram">
+                            <small>Только для сообщений</small>
+                            <dl>
+                                <dt><img src="img/telegram.svg" alt=""> Telegram</dt>
+                                <dd>
+                                    <a href="#">+81 80-4380-1212</a>
+                                    <small>вопросы обработки посылок, отправок</small>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright">Copyright © 2025 Tanukishop.com. All Rights Reserved. Company registration number:
+                    3230001014477</p>
+                <a href="#" target="_blank"><img src="img/insta.svg" alt=""></a>
+            </div>
+        </footer>
+
+        <div class="mobile-nav tablet-only">
+            <nav class="d-flex">
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#home"></use>
+                    </svg>
+                    <span>Главная</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#auction"></use>
+                    </svg>
+                    <span>Аукционы</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#cart"></use>
+                    </svg>
+                    <span>Корзина</span>
+                </a>
+                <div class="mobile-nav__item notes-trigger">
+                    <div class="header-btns__icon">
+                        <svg viewBox="0 0 25 24" width="25" height="24">
+                            <use href="/sprite.svg#notes"></use>
+                        </svg>
+                        <span>6</span>
+                    </div>
+                    <span>Уведомления</span>
+                </div>
+                <a href="#" class="mobile-nav__item mobile-nav__login">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Войти</span>
+                </a>
+                <a href="#" class="mobile-nav__item mobile-nav__profile">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Профиль</span>
+                </a>
+            </nav>
+        </div>
+
+    </div>
+    <div class="modal-overlay"></div>
+<div class="mobile-search-modal">
+        <div class="mobile-search-modal__header">
+            <button class="mobile-search-modal__back">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use href="sprite.svg#arr-left"></use>
+                </svg>
+            </button>
+            <form class="mobile-search-modal__form">
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <use href="sprite.svg#search"></use>
+                </svg>
+                <input type="text" id="mobile-search-input" placeholder="Найти товары" autofocus>
+            </form>
+        </div>
+        <div class="mobile-search-modal__content">
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus only-auth">
+                <div class="mobile-search-modal__title">Вы искали</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Мотоциклы аукцион
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Японская косметика оптом
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Часы Seiko бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Диски на авто с аукциона
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16"><use href="sprite.svg#searched"></use></svg></span>
+                        Фотоаппараты Canon бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16"><use href="sprite.svg#close"></use></svg></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus">
+                <div class="mobile-search-modal__title">Часто ищут</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        iPhone б/у Япония
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Casio G-Shock оригинал аукцион
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Роботы-пылесос с аукциона
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Лот японская посуда
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Шины бу Япония
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__focus">
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>аукцион Япония</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>под заказ из Японии</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>с пробегом Япония</b>
+                    </li>
+                </ul>
+                <div class="mobile-search-modal__title">Перейти в раздел</div>
+                <div class="mobile-search-modal__parts">
+                    <div class="mobile-search-modal__categories">
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Автомобили</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Мотоциклы</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Запчасти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="totop">
+        <svg width="20" height="20" viewBox="0 0 20 20">
+            <use href="sprite.svg#arrow"></use>
+        </svg>
+    </div>
+    <div class="cookies-note d-flex">
+        <img src="img/Info.svg" alt="">
+        <div>
+            <p>Мы используем <a href="#">cookies</a>, чтобы сохранять ваш поиск, рекомендовать
+                полезное и создавать другие удобства на сайте</p>
+            <button type="button" class="cookies-note__agree">Ок</button>
+        </div>
+        <button class="cookies-note__close">
+            <svg viewBox="0 0 16 16" width="16" height="16">
+                <use href="sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script type="module">
+        import PhotoSwipeLightbox from './js/photoswipe-lightbox.esm.min.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '.productGallery2',
+            children: 'a',
+            pswpModule: () => import('./js/photoswipe.esm.min.js'),
+            showHideAnimationType: 'fade',
+            showAnimationDuration: 300,
+            hideAnimationDuration: 300
+        });
+
+        // Создаем собственные миниатюры
+        lightbox.on('uiRegister', function () {
+            lightbox.pswp?.ui?.registerElement({
+                name: 'custom-thumbnails',
+                className: 'pswp__thumbnails',
+                appendTo: 'wrapper',
+                onInit: (el, pswp) => {
+                    // Создаем контейнер для миниатюр
+                    const thumbnailsContainer = document.createElement('div');
+                    thumbnailsContainer.className = 'pswp__thumbnails-container';
+
+                    // Добавляем миниатюры
+                    const thumbnails = document.querySelectorAll('.productGallery .swiper-slide img');
+                    thumbnails.forEach((thumb, index) => {
+                        const thumbEl = document.createElement('div');
+                        thumbEl.className = 'pswp__thumbnail';
+
+
+                        const thumbImg = document.createElement('img');
+                        thumbImg.src = thumb.src;
+
+
+                        thumbEl.appendChild(thumbImg);
+                        thumbnailsContainer.appendChild(thumbEl);
+
+                        // Обработчик клика
+                        thumbEl.addEventListener('click', () => {
+                            pswp.goTo(index);
+                        });
+                    });
+
+                    el.appendChild(thumbnailsContainer);
+
+                    // Обновляем активную миниатюру при смене слайда
+                    pswp.on('change', () => {
+                        const activeThumb = thumbnailsContainer.querySelector('.pswp__thumbnail-active');
+                        if (activeThumb) {
+                            activeThumb.classList.remove('pswp__thumbnail-active');
+
+                        }
+
+                        const newActiveThumb = thumbnailsContainer.children[pswp.currIndex];
+                        if (newActiveThumb) {
+                            newActiveThumb.classList.add('pswp__thumbnail-active');
+
+                        }
+                    });
+
+                    // Устанавливаем первую миниатюру как активную
+                    const firstThumb = thumbnailsContainer.children[0];
+                    if (firstThumb) {
+                        firstThumb.classList.add('pswp__thumbnail-active');
+
+                    }
+                }
+            });
+        });
+
+        lightbox.init();
+    </script>
+
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>

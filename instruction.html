@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tanukishop</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="">
+    <div class="container">
+
+        <header class="header">
+            <div class="header__first-row tablet-none">
+                <div class="d-flex">
+                    <nav class="top-menu">
+                        <ul>
+                            <li><a href="#" class="top-menu__item">О компании</a></li>
+                            <li><a href="#" class="top-menu__item">Стоимость</a></li>
+                            <li><a href="#" class="top-menu__item">Доставка</a></li>
+                            <li><a href="#" class="top-menu__item">Контакты</a></li>
+                            <li><a href="#" class="top-menu__item-highlighted">Авто из Японии</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-bar">
+                        <div class="top-bar__time time-msk">
+                            <b>10:00</b> в Москве
+                        </div>
+                        <div class="top-bar__time time-jpn">
+                            <b>10:00</b> в Японии
+                        </div>
+                        <div class="wallet">
+                            Кошелек
+                            <div class="wallet__balance">10,300 RUB</div>
+                        </div>
+                        <div class="exch-rate">
+                            <span>1$ = 144.78¥</span>
+                            <span>100¥ = 68.75Р</span>
+                        </div>
+                        <div class="d-flex top-bar__dropdowns">
+                            <div class="currency dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>₽ RUB</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-currency">
+                                    <ul>
+                                        <li><a href="#">¥ JPY</a></li>
+                                        <li class="current"><a href="#">₽ RUB</a></li>
+                                        <li><a href="#">$ USD</a></li>
+                                        <li><a href="#">元 CNY</a></li>
+                                        <li><a href="#">€ EUR</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="language dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>RU</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-language">
+                                    <ul>
+                                        <li class="current"><a href="#">
+                                                <span>Russian</span>
+                                                <span>Русский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>English</span>
+                                                <span>Английский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>Chinese</span>
+                                                <span>中文</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__second-row">
+                <div class="d-flex">
+                    <a href="#" class="logo">
+                        <img src="img/Tanuki.svg" alt="">
+                        <img src="img/tanuki-title.svg" alt="" class="tablet-none">
+                    </a>
+                    <div class="search-row">
+                        <div class="select-store dropdown tablet-none">
+                            <a href="#" class="btn header-btn dropdown-toggle"><span class="select-store__title">Y!
+                                    Auctions</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-store">
+                                <ul>
+                                    <li class="current"><a href="#">Y! Auctions</a></li>
+                                    <li><a href="#">Y! Shopping</a></li>
+                                    <li><a href="#">Racuten</a></li>
+                                    <li><a href="#">Croooober</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-category tablet-none">
+                            <a href="#" class="btn light-btn js-select-category">
+                                <span class="select-category__title">Все категории</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="select-cats-modal">
+                                <div class="select-cats-modal__header">
+                                    <div class="select-cats-modal__header-title">Выберите категорию для поиска</div>
+                                    <button class="select-cats-modal__header-close">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="select-cats-modal__body">
+                                    <ul class="select-cats-modal__list">
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#search"></use>
+                                            </svg><span>Все категории</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#bit-tech"></use>
+                                            </svg><span>Бытовая техника</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#fanats"></use>
+                                            </svg><span>Товары для фанатов</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#beauty"></use>
+                                            </svg><span>Красота и здоровье</span>
+                                        </li>
+
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#gardening"></use>
+                                            </svg><span>Садоводство</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#games"></use>
+                                            </svg><span>Игры и игрушки</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#sport"></use>
+                                            </svg><span>Спорт и отдых</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#hobby"></use>
+                                            </svg><span>Хобби и увлечения</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="search-form">
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="tablet-only">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                            <input type="text" name="search"
+                                placeholder="Модель кузова, поисковое слово или номер лота">
+                            <button class="btn header-btn tablet-none">
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#search"></use>
+                                </svg>
+                                <span>Найти</span></button>
+                        </form>
+                    </div>
+                    <div class="mobile-menu__trigger tablet-only">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#burger"></use>
+                        </svg>
+                    </div>
+                    <div class="header-btns">
+                        <a href="#" class="header-btns__item">
+                            <svg viewBox="0 0 25 24" width="25" height="24">
+                                <use href="sprite.svg#support"></use>
+                            </svg>
+                            <span>Поддержка</span>
+                        </a>
+                        <div class="header-btns__item header-btns__notes">
+                            <div class="notes-btn">
+                                <div class="header-btns__icon">
+                                    <svg viewBox="0 0 25 24" width="25" height="24">
+                                        <use href="/sprite.svg#notes"></use>
+                                    </svg>
+                                    <span>10</span>
+                                </div>
+                                <span>Уведомления</span>
+                            </div>
+
+                            <div class="notes-tooltip">
+                                <div class="notes-title">
+                                    <strong>Уведомления <span>(5)</span></strong>
+                                    <button class="notes-close tablet-only">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="notes-body">
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="header-btns__item header-btns__profile current">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="sprite.svg#profile"></use>
+                            </svg>
+                            <span>Профиль</span>
+                        </a>
+                        <a href="#" class="header-btns__item">
+                            <div class="header-btns__icon">
+                                <svg viewBox="0 0 25 24" width="25" height="24">
+                                    <use href="/sprite.svg#cart"></use>
+                                </svg>
+                                <span>2</span>
+                            </div>
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                    <a href="#" class="btn header-btn login-btn tablet-none">Войти</a>
+                </div>
+                <div class="modal-header-overlay"></div>
+            </div>
+            <div class="header__third-row tablet-none">
+                <div class="d-flex">
+                    <nav class="cats-menu">
+                        <ul class="menu">
+                            <li class="has-child"><a href="#" class="menu__item">Автозапчасти</a>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                                <ul class="submenu">
+                                    <li><a href="#" class="menu__item">Поиск на аукционе</a></li>
+                                    <li><a href="#" class="menu__item">Заказ новых запчастей</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu__item">Шины и диски</a></li>
+                            <li><a href="#" class="menu__item">Мототехника</a></li>
+                            <li class="menu__item menu__item--more">
+                                <span class="menu-more-title">Еще</span>
+                                <ul class="mobile-submenu menu">
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Спорт и отдых</a>
+                                    </li>
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Аниме товары</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="#" class="menu__item">Спорт и отдых</a></li>
+                            <li><a href="#" class="menu__item">Аниме товары</a></li> -->
+                        </ul>
+                    </nav>
+                    <nav class="stores-menu">
+                        <ul class="menu">
+                            <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                            <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                            <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                            <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                            <li><a href="#" class="menu__item">Другие магазины</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-menu tablet-only">
+                <div class="mobile-menu__head">
+                    <a href="#" class="mobile-menu__logo">
+                        <img src="img/Tanuki.svg" alt="">
+                    </a>
+                    <a href="#" class="mobile-menu__user">
+                        <img src="img/ava.svg" alt="" class="mobile-menu__avatar">
+                        <span class="mobile-menu__name">Константин</span>
+                    </a>
+                    <a href="#" class="btn header-btn login-btn">Войти</a>
+                    <button class="mobile-menu__close">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="">
+                    <ul class="">
+                        <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                        <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                        <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                        <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                        <li><a href="#" class="menu__item">Другие магазины</a></li>
+                    </ul>
+                </nav>
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="menu__item">О компании</a></li>
+                        <li><a href="#" class="menu__item">Стоимость</a></li>
+                        <li><a href="#" class="menu__item">Доставка</a></li>
+                        <li><a href="#" class="menu__item">Контакты</a></li>
+                        <li><a href="#" class="menu__item menu__item-highlighted">Авто из Японии</a></li>
+                        <li><a href="#" class="menu__item">Поддержка</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__bottom">
+                    <div class="exch-rate">
+                        <span>1$ = 144.78¥</span>
+                        <span>100¥ = 68.75Р</span>
+                    </div>
+                    <div class="wallet">
+                        <strong>Кошелек</strong>
+                        <div class="wallet__balance">10,300 RUB</div>
+                    </div>
+                    <div class="mobile-menu__language">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Язык</strong>
+                            <span>Русский</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Язык</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li class="current"><a href="#">Russian (Русский)</a></li>
+                                <li><a href="#">English (English)</a></li>
+                                <li><a href="#">Chinese (中文)</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu__currency">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Валюта</strong>
+                            <span>RUB</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Валюта</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li><a href="#">¥ JPY</a></li>
+                                <li class="current"><a href="#">₽ RUB</a></li>
+                                <li><a href="#">$ USD</a></li>
+                                <li><a href="#">元 CNY</a></li>
+                                <li><a href="#">€ EUR</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__overlay"></div>
+            </div>
+        </header>
+
+        <main class="">
+
+            <ul class="breadcrumbs">
+                <li><a href="#">Моя страница</a></li>
+                <li class="current-item"><span>Подробная инструкция: как купить</span></li>
+            </ul>
+
+            <div class="blogpages">
+                <div class="single-article single-article--instruction">
+                    <div class="blogpages__title">
+                        <h1>Подробная инструкция: как купить</h1>
+                        <p>Зарегистрироваться, искать товары, делать ставки и оформить покупку на японском аукционе
+                            Yahoo.
+                            Мы поможем оплатить, организовать доставку и собрать ваши заказы в одну посылку для удобства
+                            и
+                            безопасности.</p>
+                    </div>
+
+                    <div class="instruction-tabs tabs">
+                        <nav class="account-tabs__nav">
+                            <ul class="tabs-nav">
+                                <li class="tabs-nav__item active" data-tab="tab1">
+                                    <button class="btn">Поиск товара</button>
+                                </li>
+                                <li class="tabs-nav__item" data-tab="tab2">
+                                    <button class="btn">Участие в аукционе</button>
+                                </li>
+                                <li class="tabs-nav__item" data-tab="tab3">
+                                    <button class="btn">Покупка на шопинге и ракутене</button>
+                                </li>
+                                <li class="tabs-nav__item" data-tab="tab4">
+                                    <button class="btn">Поиск запчастей</button>
+                                </li>
+                                <li class="tabs-nav__item" data-tab="tab5">
+                                    <button class="btn">Пополнение баланса</button>
+                                </li>
+                                <li class="tabs-nav__item" data-tab="tab6">
+                                    <button class="btn">Создание посылки</button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="tabs-content">
+                            <div class="tabs-content__item active" data-tab-content="tab1">
+
+                                <div class="single-article__content">
+                                    <h2>Поиск товара</h2>
+                                    <p><strong>Шаг 1. Выберите, где искать</strong></p>
+                                    <p><b>На сайте доступны:</b></p>
+
+                                    <ul class="marker">
+                                        <li><b>Yahoo Auctions —</b> крупнейший японский онлайн-аукцион, где можно
+                                            сделать ставку и купить новый или подержанный товар по выгодной цене.
+                                            Продавцы: как магазины, так и частные лица.</li>
+                                        <li><b>Yahoo Shopping</b> и <b>Rakuten, и другие —</b> японские
+                                            интернет-магазины с новыми товарами.</li>
+                                    </ul>
+                                    <p>Вы можете <b>переключаться между платформами</b> с помощью:</p>
+                                    <ul class="marker">
+                                        <li>выпадающего списка (в поиске),</li>
+                                        <li>либо вкладок под строкой поиска.</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct1.webp" alt="">
+                                    </figure>
+                                    <p><strong>Шаг 2. Используйте строку поиска</strong></p>
+                                    <ul class="marker">
+                                        <li>Введите название товара в строку поиска.</li>
+                                        <li>Система подскажет категории и ключевые слова.</li>
+                                        <li>Выберите нужную категорию из выпадающего списка.</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct2.webp" alt="Пример поиска по строке">
+                                    </figure>
+                                    <p><strong>Шаг 3. Поиск по категориям</strong></p>
+                                    <p>На главной странице представлены популярные категории — вы можете начать с них,
+                                        если хотите просто посмотреть ассортимент.</p>
+                                    <p> ⚠️ Учтите: категории на аукционе и в магазинах отличаются, поэтому, если не
+                                        нашли нужное — попробуйте сменить источник поиска (например, с аукциона на
+                                        Rakuten).</p>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct3.webp" alt="Популярные категории">
+                                    </figure>
+                                    <p><strong>Шаг 4. Поиск с помощью сотрудников</strong></p>
+                                    <p>
+                                        Если не удаётся найти товар самостоятельно, обратитесь в поддержку — специалисты
+                                        Tanukishop подберут товар за вас.
+                                    </p>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct4.webp" alt="Популярные категории">
+                                    </figure>
+                                    <p><strong>Шаг 5. Поиск автозапчастей по кузову</strong></p>
+                                    <ul class="marker">
+                                        <li>Для автотоваров лучше использовать поиск по кузову:</li>
+                                        <li>Введите модель кузова автомобиля (например, AZT240) в строку поиска.</li>
+                                        <li>Перейдите в категорию «Автомобили и мотоциклы» → «Запчасти».</li>
+                                        <li>Уточняйте нужную категорию запчастей — поиск по кузову сохранится.</li>
+                                    </ul>
+                                    <p>
+                                        Вы можете свободно переключаться между аукционами и магазинами — поисковый
+                                        запрос сохраняется.
+                                    </p>
+                                    <p><strong>Шаг 6. Настройте сортировку результатов</strong></p>
+                                    <p>Вы можете сортировать товары по:</p>
+                                    <ul class="marker">
+                                        <li>цене;</li>
+                                        <li>времени окончания аукциона;</li>
+                                        <li>истории ставок;</li>
+                                        <li>другим параметрам.</li>
+                                    </ul>
+                                    <p><strong>Шаг 7. Измените вид отображения</strong></p>
+                                    <p>Есть два режима:</p>
+                                    <ul class="marker">
+                                        <li>Плитка (сетка) — больше товаров на экране.</li>
+                                        <li>Список (строки) — больше информации о каждом товаре (продавец, состояние,
+                                            доставка и т.д.).</li>
+                                    </ul>
+                                    <p><strong>Шаг 8. Выбор валюты</strong></p>
+                                    <p>Вы можете переключать валюту отображения цен:</p>
+                                    <ul class="marker">
+                                        <li>₽ — Российский рубль</li>
+                                        <li>¥ — Японская иена</li>
+                                        <li>$ — Доллар США</li>
+                                        <li>€ — Евро</li>
+                                        <li>元 — Юань</li>
+                                    </ul>
+                                    <p><strong>Шаг 9. Понимание цен</strong></p>
+                                    <ul class="marker">
+                                        <li>Текущая цена — ставка, достигнутая в аукционе на данный момент.</li>
+                                        <li>Блиц-цена — цена, по которой можно сразу купить товар, не участвуя в
+                                            торгах.<br>
+                                            <span class="article-warning">
+                                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                                    <use href="sprite.svg#warning"></use>
+                                                </svg>
+                                                После покупки по блиц-цене аукцион завершается.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <p><strong>Шаг 10. Добавление в избранное</strong></p>
+                                    <p>
+                                        Нажмите на сердце возле товара — он добавится в список отслеживания.<br>
+                                        В личном кабинете вы сможете следить за ставками и статусами этих лотов.
+                                    </p>
+                                    <p><strong>Шаг 11. Фильтрация товаров</strong></p>
+                                    <p>В режиме списка вы можете увидеть:</p>
+                                    <ul class="marker">
+                                        <li>Кто продавец (Магазин или частное лицо),</li>
+                                        <li>Есть ли бесплатная доставка по Японии,</li>
+                                        <li>Новый ли товар.</li>
+                                    </ul>
+                                    <p>
+                                        По этим и другим параметрам можно фильтровать товары в левой части страницы.
+                                    </p>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct5.webp" alt="Популярные категории">
+                                    </figure>
+                                    <p><strong>Шаг 12. Обратите внимание на качество перевода</strong></p>
+                                    <p>
+                                        Названия и описания товаров переведены автоматически — возможны ошибки или
+                                        некорректные формулировки.
+                                    </p>
+                                    <p>
+                                        Если что-то непонятно:<br>
+                                        Обратитесь в поддержку Tanukishop.
+                                    </p>
+                                    <p>
+                                        Наши специалисты знают японский язык и смогут:
+                                    </p>
+                                    <ul class="marker">
+                                        <li>уточнить описание;</li>
+                                        <li>перевести текст точно;</li>
+                                        <li>задать вопрос продавцу.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="tabs-content__item" data-tab-content="tab2">
+                                <div class="single-article__content">
+                                    <h2>Участие в аукционе</h2>
+                                    <p><strong>Шаг 1. Найдите интересующий товар</strong></p>
+                                    <ul class="marker">
+                                        <li>Используйте поиск или навигацию по категориям.</li>
+                                        <li>Откройте карточку товара (лот), чтобы изучить подробную информацию.</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct6.webp" alt="">
+                                        <figcaption>Аукцион. Карточка товара </figcaption>
+                                    </figure>
+                                    <p><strong>Шаг 2. Изучите информацию о лоте</strong></p>
+                                    <ul class="marker">
+                                        <li>В верхней части страницы вы увидите изображения товара. Осмотрите их
+                                            внимательно — дефекты обычно видны именно на фото.</li>
+                                        <li>
+                                            Ниже представлены:
+                                            <ul class="marker">
+                                                <li>Подробные характеристики товара.</li>
+                                                <li>Информация о ходе торгов: текущая ставка в иенах, эквивалент в
+                                                    рублях,
+                                                    блиц-цена (если есть), налог (если продавец — магазин).</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p><strong>Шаг 3. Сделайте ставку или выкупите товар по блиц-цене</strong></p>
+                                    <ul class="marker">
+                                        <li>Если у продавца указана блиц-цена, вы можете сразу выкупить товар без
+                                            участия в торгах.</li>
+                                        <li>Чтобы участвовать в аукционе:
+                                            <ol type="a">
+                                                <li>Введите максимальную ставку, которую готовы заплатить.</li>
+                                                <li>Система поставит за вас минимально возможную ставку, чуть выше
+                                                    текущей, с
+                                                    учётом шага.</li>
+                                                <li>Если вашу ставку перебьют, вы получите уведомление.</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+
+                                    <p>📌 Пример:</p>
+                                    <ul>
+                                        <li>&rarr; Текущая ставка: 1,000 ¥</li>
+                                        <li>&rarr; Максимальная ставка другого участника: 2,200 ¥</li>
+                                        <li>&rarr; Вы ставите: 4,000 ¥</li>
+                                        <li>&rarr; Минимальный шаг: 200 ¥</li>
+                                        <li>&rarr; Ваша ставка будет установлена как 2,400 ¥
+                                            (и спишется только эта сумма, если никто не
+                                            перебьёт)</li>
+                                    </ul>
+                                    <p><strong>Шаг 4. Блокировка средств на балансе</strong></p>
+                                    <ul class="marker">
+                                        <li>При установке ставки:
+                                            <ul class="marker">
+                                                <li>Блокируется ваша максимальная ставка</li>
+                                                <li>страховая сумма 1,500 ¥</li>
+                                            </ul>
+                                        </li>
+                                        <li>Эти средства нельзя использовать до завершения аукциона или пока вашу ставку
+                                            не перебьют.</li>
+                                        <li>Если вы проиграли — сумма разблокируется.</li>
+                                        <li>Если вы выиграли:
+                                            <ul class="marker">
+                                                <li>Списывается фактическая выигравшая ставка + комиссия</li>
+                                                <li>Разница между вашей максимальной ставкой и итоговой — возвращается
+                                                </li>
+                                                <li>Страховая сумма 1,500 ¥ — также возвращается</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p><strong>Шаг 5. Следите за завершением аукциона</strong></p>
+                                    <ul class="marker">
+                                        <li>Отображается таймер, сколько времени осталось до конца торгов.</li>
+                                        <li>Можно добавить лот в Избранное, чтобы следить за ним из личного кабинета.
+                                        </li>
+                                        <li>Если вас перебили — получите email-уведомление.</li>
+                                        <li>При необходимости, можно мгновенно повторно сделать ставку, используя уже
+                                            заблокированные средства (если нажать на значок купюры рядом с именем
+                                            лидера).</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct7.webp" alt="Популярные категории">
+                                        <figcaption>Блок с описанием товара</figcaption>
+                                    </figure>
+                                    <p><strong>Шаг 6. Ознакомьтесь с описанием товара</strong></p>
+                                    <p>Ниже на странице — подробное описание, включая:</p>
+                                    <ul class="marker">
+                                        <li>состояние товара;</li>
+                                        <li>способы доставки по Японии;</li>
+                                        <li>возможные дефекты.</li>
+                                    </ul>
+                                    <p class="article-warning">
+                                        <b>⚠️ Обратите внимание:</b><br>
+                                        Описание и название — это автоматический перевод с японского, он может быть
+                                        неточным или непонятным.
+                                    </p>
+                                    <p>
+                                        Если что-то непонятно — напишите в поддержку. Наши сотрудники:
+                                    </p>
+                                    <ul class="marker">
+                                        <li>переведут оригинальный текст;</li>
+                                        <li>при необходимости, зададут вопрос продавцу напрямую.</li>
+                                    </ul>
+                                    <p>
+                                        Вы можете отправить запрос через форму 5 в описании.
+                                    </p>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct8.webp" alt="Популярные категории">
+                                        <figcaption>Блок с описанием товара</figcaption>
+                                    </figure>
+                                    <p><strong>Шаг 7. Оцените стоимость доставки</strong></p>
+                                    <p>
+                                        В описании есть вкладка Калькулятор стоимости (6).<br>
+                                        Текущая ставка подставляется автоматически.<br>
+                                        Укажите свою максимальную ставку.
+                                    </p>
+                                    <p>Доставку по Японии можно:</p>
+                                    <ul class="marker">
+                                        <li>взять из описания продавца;</li>
+                                        <li>или ориентировочно указать 1,000–1,500 ¥ (для мелких товаров).</li>
+                                    </ul>
+                                    <p><strong>Шаг 8. После победы в аукционе</strong></p>
+                                    <p>Персонал Tanukishop:</p>
+                                    <ul class="marker">
+                                        <li>оплачивает товар продавцу;</li>
+                                        <li>организует доставку до склада в Японии;</li>
+                                        <li>по необходимости — переупаковывает, проверяет товар;</li>
+                                        <li>может объединить несколько товаров в одну посылку.</li>
+                                    </ul>
+                                    <p><strong>Шаг 9. Отправка в Россию</strong></p>
+                                    <p>Как только товар поступит на склад:</p>
+                                    <ul class="marker">
+                                        <li>с вами свяжется персонал;</li>
+                                        <li>вы выберете способ доставки;</li>
+                                        <li>оплатите посылку;</li>
+                                        <li>получите номер для отслеживания.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs-content__item" data-tab-content="tab3">
+                                <div class="single-article__content">
+                                    <h2>Покупка на шопинге и ракутене</h2>
+
+                                    <p><strong>Шаг 1. Откройте нужный магазин</strong></p>
+                                    <ul class="marker">
+                                        <li>Перейдите на вкладку Yahoo Shopping или Rakuten в верхней части сайта.</li>
+                                        <li>Можно сразу использовать поиск по названию товара или выбрать интересующую
+                                            категорию.</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct9.webp" alt="">
+                                    </figure>
+
+                                    <p><strong>Шаг 2. Найдите товар</strong></p>
+                                    <p>Используйте фильтры:</p>
+                                    <ul class="marker">
+                                        <li>по цене,</li>
+                                        <li>по наличию/отсутствию платной доставки по Японии.</li>
+                                    </ul>
+                                    <p>Навигация по подкатегориям доступна слева.</p>
+                                    <p>
+                                        Учитывайте: стоимость доставки по Японии зависит от:
+                                    </p>
+                                    <ul class="marker">
+                                        <li>удалённости продавца от склада Tanukishop в Тояме;</li>
+                                        <li>размеров и веса товара.</li>
+                                    </ul>
+
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct10.webp" alt="">
+                                    </figure>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct11.webp" alt="">
+                                        <figcaption>Блок с описанием товара</figcaption>
+                                    </figure>
+                                    <p><strong>Шаг 3. Откройте описание товара</strong></p>
+                                    <ul class="marker">
+                                        <li>Изучите фотографии и характеристики.</li>
+                                        <li>Название и описание переводятся автоматически, поэтому возможны ошибки или
+                                            неточности.</li>
+                                    </ul>
+                                    <p class="article-warning">
+                                        ⚠️ Если что-то непонятно — обратитесь в службу поддержки Tanukishop:
+                                    </p>
+                                    <ul class="marker">
+                                        <li>Внизу карточки есть поле для отправки запроса.</li>
+                                        <li>Сотрудники прочитают оригинальный японский текст и объяснят важные детали.
+                                        </li>
+                                        <li>Помните, служба поддержки работает по японскому времени — ответ может прийти
+                                            не сразу.</li>
+                                    </ul>
+
+                                    <p><strong>Шаг 4. Убедитесь в наличии товара</strong></p>
+                                    <ul class="marker">
+                                        <li>Даже если товар отображается на сайте, это не гарантирует наличие.</li>
+                                        <li>Также проверьте возможность купить несколько штук — некоторые продавцы
+                                            ограничивают количество.</li>
+                                    </ul>
+                                    <p><strong>Шаг 5. Добавьте товар в корзину</strong></p>
+                                    <ul class="marker">
+                                        <li>После добавления в корзину товар получает статус: «Ожидание проверки на
+                                            наличие» — сотрудники Tanukishop вручную проверят, доступен ли товар к
+                                            заказу.</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct12.webp" alt="">
+                                    </figure>
+                                    <p><strong>Шаг 6. Дождитесь подтверждения</strong></p>
+                                    <ul class="marker">
+                                        <li>Если товар подтверждён, вы получите уведомление на e-mail.</li>
+                                        <li>В корзине статус изменится на «Подтверждён к оплате».</li>
+                                        <li>Если доставка по Японии платная — сумма будет указана рядом с товаром. Если
+                                            бесплатная — будет отображаться 0 ¥.</li>
+                                    </ul>
+
+                                    <p><strong>Шаг 7. Оплатите товар</strong></p>
+                                    <ul class="marker">
+                                        <li>После подтверждения станет доступна зелёная кнопка «Приступить к оплате».
+                                        </li>
+                                        <li>Вас переадресует на страницу оплаты.</li>
+                                        <li>Если на балансе недостаточно средств — потребуется пополнить баланс.</li>
+                                    </ul>
+                                    <p><strong>Шаг 8. Ожидайте прибытия товара на склад</strong></p>
+                                    <ul class="marker">
+                                        <li>Когда товар поступит на склад Tanukishop в Японии:
+                                            <ul class="marker">
+                                                <li>его взвесят и измерят,</li>
+                                                <li>это повлияет на стоимость доставки в Россию.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <p><strong>Шаг 9. Получите уведомление и оформите доставку</strong></p>
+                                    <ul class="marker">
+                                        <li>Когда товар будет обработан, вы получите уведомление на почту.</li>
+                                        <li>Останется:
+                                            <ol type="a">
+                                                <li>Выбрать способ международной доставки,</li>
+                                                <li>Указать адрес,</li>
+                                                <li>Оплатить доставку.</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        📦 После этого посылка будет отправлена вам — можно будет отслеживать доставку и
+                                        статус из личного кабинета.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tabs-content__item" data-tab-content="tab4">
+                                <div class="single-article__content">
+                                    <h2>Поиск запчастей</h2>
+                                    <p><strong>Шаг 1. Перейдите в раздел «Быстрый поиск запчастей»</strong></p>
+                                    <ul class="marker">
+                                        <li>В верхнем меню сайта найдите ссылку «Быстрый поиск запчастей».</li>
+                                        <li>Кликните на неё, чтобы открыть специализированную страницу для поиска
+                                            автотоваров.</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct13.webp" alt="">
+                                    </figure>
+
+                                    <p><strong>Шаг 2. Уточните данные об автомобиле</strong></p>
+                                    <p>На открывшейся странице введите:</p>
+                                    <ul class="marker">
+                                        <li>Производителя автомобиля (например, Toyota, Honda и т.д.)</li>
+                                        <li>Модель автомобиля</li>
+                                        <li>Модель кузова (например, AZT240) — это поможет отобрать только совместимые
+                                            запчасти</li>
+                                        <li>Состояние товара — можно указать, ищете ли вы новые или б/у детали</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct14.webp" alt="">
+                                    </figure>
+                                    <p><strong>Шаг 3. Выберите категорию запчастей</strong></p>
+                                    <p>
+                                        После ввода информации об авто, кликните по нужной категории запчастей
+                                        (например, тормоза, подвеска, оптика и т.д.)
+                                    </p>
+                                    <p>
+                                        Система автоматически отфильтрует и покажет вам все подходящие предложения с
+                                        аукциона Yahoo Auctions.
+                                    </p>
+
+                                    <p><strong>Шаг 4. Альтернатива — поиск по производителю запчастей</strong></p>
+                                    <p>Если вам важен конкретный бренд запчастей:</p>
+                                    <ul class="marker">
+                                        <li>Откройте вкладку Yahoo Auctions (жёлтая кнопка в верхнем меню сайта)</li>
+                                        <li>Нажмите на баннер «Поиск запчастей»</li>
+                                    </ul>
+
+                                    <p><strong>Шаг 5. Выберите производителя</strong></p>
+                                    <p>
+                                        Вы попадёте на страницу с перечнем производителей запчастей.<br>
+                                        Слева выберите нужные подкатегории и уточните нужный тип запчастей.
+                                    </p>
+
+                                    <div class="article-tips">
+
+                                        <p> <b>🎯 Советы:</b></p>
+                                        <ul class="marker">
+                                            <li>Используйте поиск по кузову, если стандартный поиск выдаёт слишком много
+                                                результатов.</li>
+                                            <li>Если описание товара непонятно — обращайтесь в службу поддержки
+                                                Tanukishop, они помогут с точным переводом с японского.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs-content__item" data-tab-content="tab5">
+                                <div class="single-article__content">
+                                    <h2>Пополнение баланса</h2>
+
+                                    <p><strong>Шаг 1. Откройте личный кабинет</strong></p>
+                                    <ul class="marker">
+                                        <li>Перейдите в раздел «Моя страница» (в меню или через иконку профиля).</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct15.webp" alt="">
+                                        <figcaption>Подпись к фото</figcaption>
+                                    </figure>
+                                    <p><strong>Шаг 2. Найдите кнопку пополнения</strong></p>
+                                    <p>Попасть на страницу пополнения можно несколькими способами:</p>
+                                    <ul class="marker">
+                                        <li>Нажмите на сундучок с надписью «Пополнить счёт»;</li>
+                                        <li>Или кликните по синей строке «Пополнить счёт» (она расположена над
+                                            пиктограммами);</li>
+                                        <li>Или нажмите на цифры рядом с надписью «Кошелёк» в шапке сайта — рядом с
+                                            иконкой корзины.</li>
+                                    </ul>
+                                    <p><strong>Шаг 3. Введите сумму пополнения</strong></p>
+                                    <p>На странице пополнения баланса укажите сумму, которую хотите внести.</p>
+                                    <p>Учитывайте комиссии:</p>
+                                    <ul class="marker">
+                                        <li>1000 ¥ — за выигрыш на аукционе;</li>
+                                        <li>300 ¥ — за покупку в Yahoo Shopping или Rakuten;</li>
+                                        <li>1500 ¥ — страховой депозит для участия в аукционе:
+                                            <ul class="marker">
+                                                <li>блокируется при размещении ставки;</li>
+                                                <li>возвращается на баланс, если вы проиграли;</li>
+                                                <li>если выиграли — можно использовать для оплаты доставки.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct16.webp" alt="">
+                                        <figcaption>Подпись к фото</figcaption>
+                                    </figure>
+
+                                    <p><strong>Шаг 4. Выберите способ оплаты</strong></p>
+                                    <p>Нажмите кнопку «Продолжить» и выберите удобный способ:</p>
+                                    <ul class="marker">
+                                        <li>PayPal — доступен, но имеет высокую комиссию (3,9%);</li>
+                                        <li>Банковская карта через надёжные платёжные системы (например, OVERPAY,
+                                            Intervale);</li>
+                                        <li>СБП — без комиссии, если доступно.</li>
+                                    </ul>
+                                    <p>🔒 Все платежи защищены 256-битным SSL-шифрованием, данные карт не хранятся на
+                                        сайте.
+                                    </p>
+                                    <p>📌 Совет: Пополняйте баланс с запасом — учтите стоимость товара, доставки по
+                                        Японии, международной доставки и возможные комиссии.
+                                    </p>
+                                    <p>🎁 Бонус новым пользователям</p>
+                                    <p>Все новые зарегистрированные пользователи получают подарок 300 иен на баланс от
+                                        сервиса Tanukishop.</p>
+                                    <p>Сумма начисляется автоматически после подтверждения регистрации.</p>
+                                    <p>🔹 Как пополнить баланс</p>
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="tabs-content__item" data-tab-content="tab6">
+                                <div class="single-article__content">
+                                    <h2>Создание посылки</h2>
+
+                                    <p><strong>Шаг 1. Отслеживайте статус товара</strong></p>
+                                    <ul class="marker">
+                                        <li>После того как вы выиграли аукцион или купили товар в интернет-магазине,
+                                            Tanukishop:
+                                            <ul class="marker">
+                                                <li>оплачивает заказ продавцу;</li>
+                                                <li>отслеживает доставку товара по Японии;</li>
+                                                <li>принимает товар на свой склад в Тояме.</li>
+                                            </ul>
+                                        </li>
+                                        <li>В разделе «Мои заказы» (в личном кабинете на странице «Моя страница») можно
+                                            следить за статусом каждого заказа.</li>
+                                        <li>Когда товар поступит на склад, его взвешивают и измеряют. После этого статус
+                                            изменится на «Готов к отправке».</li>
+                                        <li>Вы получите уведомление об этом на e-mail.</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct17.webp" alt="">
+                                        <figcaption>Страница «Мои заказы»</figcaption>
+                                    </figure>
+                                    <p><strong>Шаг 2. Перейдите к созданию посылки</strong></p>
+                                    <p>Создать посылку можно двумя способами:</p>
+                                    <ul class="marker">
+                                        <li>В разделе «Посылки» — откройте раздел в личном кабинете и нажмите кнопку
+                                            «Создать посылку».</li>
+                                        <li>На странице «Мои заказы» — если у товара уже указан статус «Готов к
+                                            отправке», рядом будет кнопка «Создать посылку». Нажмите её — вы сразу
+                                            перейдёте к оформлению с выбранным товаром.</li>
+                                    </ul>
+                                    <p><strong>Шаг 3. Добавьте адрес доставки</strong></p>
+                                    <p>Нажмите «Добавить адрес доставки».</p>
+                                    <p>Затем — «Добавить адрес».</p>
+                                    <p>Заполните форму:</p>
+                                    <ul class="marker">
+                                        <li>ФИО получателя;</li>
+                                        <li>Номер телефона;</li>
+                                        <li>Почтовый индекс и адрес;</li>
+                                        <li>Страна;</li>
+                                        <li>Серия и номер паспорта (только если доставка по России транспортной
+                                            компанией).</li>
+                                    </ul>
+                                    <p>📌 Если вы выбрали международную доставку (авиапочта, EMS, SAL и др.), паспортные
+                                        данные не обязательны.
+                                    </p>
+                                    <p><strong>Шаг 5. Выберите дополнительные услуги склада</strong></p>
+                                    <p>Внизу страницы вы можете указать нужные опции:</p>
+                                    <ul class="marker">
+                                        <li>✅ Проверка товара (на целостность, комплектацию, работоспособность)</li>
+                                        <li>✅ Переупаковка (важно для хрупких товаров)</li>
+                                        <li>✅ Деревянная обрешётка — усиленная упаковка</li>
+                                        <li>✅ Разборка гитар — уменьшает габариты и снижает риск повреждений</li>
+                                        <li>✅ Снятие шин с дисков — для тех, кто заказывает колёса</li>
+                                        <li>✅ Консолидация — объединение нескольких товаров в одну посылку</li>
+                                        <li>✅ Усиление упаковки прессованным картоном</li>
+                                        <li>✅ Индивидуальные просьбы (если нужно — пишите в комментарии)</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct18.webp" alt="">
+                                        <figcaption>Добавление адреса</figcaption>
+                                    </figure>
+                                    <p><strong>Шаг 6. Нажмите «Создать посылку»</strong></p>
+                                    <p>После этого сотрудники склада:</p>
+                                    <ul class="marker">
+                                      <li>проведут переупаковку;</li>
+                                      <li>применят выбранные услуги;</li>
+                                      <li>подготовят посылку к отправке.</li>
+                                    </ul>
+                                    <figure class="single-article__image">
+                                        <img src="img/instruction/instruct19.webp" alt="">
+                                        <figcaption>Дополнительные услуги</figcaption>
+                                    </figure>
+                                    <p><strong>Шаг 7. Выберите способ доставки</strong></p>
+                                    <p>
+                                      Когда посылка будет готова, вы получите уведомление.<br>
+                                      Перейдите на страницу посылки и выберите способ международной доставки.
+                                    </p>
+                                    <p>⚠️ Обратите внимание:</p>
+                                    <p>Некоторые товары нельзя отправлять определёнными способами:
+                                    </p>
+                                    <ul class="marker">
+                                      <li>Жидкости запрещены для авиадоставки.</li>
+                                      <li>Аккумуляторы могут быть ограничены, если не установлены внутри устройств.</li>
+                                    </ul>
+                                    <p><strong>Шаг 8. Оплатите доставку</strong></p>
+                                    <p>
+                                      После выбора способа доставки появится кнопка «Оплатить».<br>
+                                      Оплатите стоимость доставки — и ваша посылка будет отправлена.
+                                    </p>
+                                    <p><strong>Шаг 9. Получите трек-номер</strong></p>
+                                    <p>После отправки:</p>
+                                    <ul class="marker">
+                                      <li>статус посылки обновится;</li>
+                                      <li>появится номер для отслеживания.</li>
+                                    </ul>
+                                    <p>📦 Если доставка морем — трек-номер появится только после передачи товара в транспортную компанию.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__col footer__col-first">
+                    <a href="#" class="footer__logo"><img src="img/logo-full.png" alt=""></a>
+                    <div class="footer__payment-systems">
+                        <img src="img/PayPal-logo.svg" alt="">
+                        <div class="d-flex">
+                            <img src="img/visa.svg" alt="">
+                            <img src="img/master.svg" alt="">
+                            <img src="img/amex.svg" alt="">
+                            <img src="img/discover.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer__store-logos">
+                        <img src="img/yahoo-logo.svg" alt="">
+                        <img src="img/rakuten-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Компания</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Условия предоставления услуги</a></li>
+                        <li><a href="#">Политика конфиденцальности</a></li>
+                        <li><a href="#">Политика возвратов</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Личный кабинет</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Моя страница</a></li>
+                        <li><a href="#">Мой аукцион</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Посылки</a></li>
+                        <li><a href="#">Служба поддержки</a></li>
+                    </ul>
+                    <hr>
+                    <h5 class="footer__col-title">Сервисы</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Калькулятор доставки</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Контакты</h5>
+                    <div class="footer-accordion">
+                        <div class="footer__contacts">
+                            <p>Onteco Co., Ltd. - Tanuki Shop International Sales </p>
+                            <address>Address: 939-0304, Japan, Toyama prefecture, Imizu, Kosugi Shiraishi 638
+                            </address>
+                            <div class="d-flex">
+                                <div><span>Центр поддержки клиентов</span></div>
+                                <div>
+                                    <span>9:00 – 18:00</span>
+                                    <small>время по Японии</small>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="footer__divider"></span>
+                        <div class="footer__telegram">
+                            <small>Только для сообщений</small>
+                            <dl>
+                                <dt><img src="img/telegram.svg" alt=""> Telegram</dt>
+                                <dd>
+                                    <a href="#">+81 80-4380-1212</a>
+                                    <small>вопросы обработки посылок, отправок</small>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright">Copyright © 2025 Tanukishop.com. All Rights Reserved. Company registration number:
+                    3230001014477</p>
+                <a href="#" target="_blank"><img src="img/insta.svg" alt=""></a>
+            </div>
+        </footer>
+
+        <div class="mobile-nav tablet-only">
+            <nav class="d-flex">
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#home"></use>
+                    </svg>
+                    <span>Главная</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#auction"></use>
+                    </svg>
+                    <span>Аукционы</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#cart"></use>
+                    </svg>
+                    <span>Корзина</span>
+                </a>
+                <div class="mobile-nav__item notes-trigger">
+                    <div class="header-btns__icon">
+                        <svg viewBox="0 0 25 24" width="25" height="24">
+                            <use href="/sprite.svg#notes"></use>
+                        </svg>
+                        <span>6</span>
+                    </div>
+                    <span>Уведомления</span>
+                </div>
+                <a href="#" class="mobile-nav__item mobile-nav__login">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Войти</span>
+                </a>
+                <a href="#" class="mobile-nav__item mobile-nav__profile current">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Профиль</span>
+                </a>
+            </nav>
+        </div>
+
+    </div>
+    <div class="modal-overlay"></div>
+    <div class="mobile-search-modal">
+        <div class="mobile-search-modal__header">
+            <button class="mobile-search-modal__back">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use href="sprite.svg#arr-left"></use>
+                </svg>
+            </button>
+            <form class="mobile-search-modal__form">
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <use href="sprite.svg#search"></use>
+                </svg>
+                <input type="text" id="mobile-search-input" placeholder="Найти товары" autofocus>
+            </form>
+        </div>
+        <div class="mobile-search-modal__content">
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus only-auth">
+                <div class="mobile-search-modal__title">Вы искали</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Мотоциклы аукцион
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Японская косметика оптом
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Часы Seiko бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Диски на авто с аукциона
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Фотоаппараты Canon бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus">
+                <div class="mobile-search-modal__title">Часто ищут</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        iPhone б/у Япония
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Casio G-Shock оригинал аукцион
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Роботы-пылесос с аукциона
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Лот японская посуда
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Шины бу Япония
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__focus">
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>аукцион Япония</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>под заказ из Японии</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>с пробегом Япония</b>
+                    </li>
+                </ul>
+                <div class="mobile-search-modal__title">Перейти в раздел</div>
+                <div class="mobile-search-modal__parts">
+                    <div class="mobile-search-modal__categories">
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Автомобили</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Мотоциклы</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Запчасти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="totop">
+        <svg width="20" height="20" viewBox="0 0 20 20">
+            <use href="sprite.svg#arrow"></use>
+        </svg>
+    </div>
+    <div class="cookies-note d-flex">
+        <img src="img/Info.svg" alt="">
+        <div>
+            <p>Мы используем <a href="#">cookies</a>, чтобы сохранять ваш поиск, рекомендовать
+                полезное и создавать другие удобства на сайте</p>
+            <button type="button" class="cookies-note__agree">Ок</button>
+        </div>
+        <button class="cookies-note__close">
+            <svg viewBox="0 0 16 16" width="16" height="16">
+                <use href="sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

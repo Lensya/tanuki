@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tanukishop</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="">
+    <div class="container">
+
+        <header class="header">
+            <div class="header__first-row tablet-none">
+                <div class="d-flex">
+                    <nav class="top-menu">
+                        <ul>
+                            <li><a href="#" class="top-menu__item">О компании</a></li>
+                            <li><a href="#" class="top-menu__item">Стоимость</a></li>
+                            <li><a href="#" class="top-menu__item">Доставка</a></li>
+                            <li><a href="#" class="top-menu__item">Контакты</a></li>
+                            <li><a href="#" class="top-menu__item-highlighted">Авто из Японии</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-bar">
+                        <div class="top-bar__time time-msk">
+                            <b>10:00</b> в Москве
+                        </div>
+                        <div class="top-bar__time time-jpn">
+                            <b>10:00</b> в Японии
+                        </div>
+                        <div class="wallet">
+                            Кошелек
+                            <div class="wallet__balance">10,300 RUB</div>
+                        </div>
+                        <div class="exch-rate">
+                            <span>1$ = 144.78¥</span>
+                            <span>100¥ = 68.75Р</span>
+                        </div>
+                        <div class="d-flex top-bar__dropdowns">
+                            <div class="currency dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>₽ RUB</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-currency">
+                                    <ul>
+                                        <li><a href="#">¥ JPY</a></li>
+                                        <li class="current"><a href="#">₽ RUB</a></li>
+                                        <li><a href="#">$ USD</a></li>
+                                        <li><a href="#">元 CNY</a></li>
+                                        <li><a href="#">€ EUR</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="language dropdown">
+                                <div class="dropdown-toggle top-bar__dropdown-toggle">
+                                    <span>RU</span>
+                                    <svg viewBox="0 0 12 12" width="12" height="12">
+                                        <use href="sprite.svg#shevron-down-small"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu dropdown-language">
+                                    <ul>
+                                        <li class="current"><a href="#">
+                                                <span>Russian</span>
+                                                <span>Русский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>English</span>
+                                                <span>Английский</span>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <span>Chinese</span>
+                                                <span>中文</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__second-row">
+                <div class="d-flex">
+                    <a href="#" class="logo">
+                        <img src="img/Tanuki.svg" alt="">
+                        <img src="img/tanuki-title.svg" alt="" class="tablet-none">
+                    </a>
+                    <div class="search-row">
+                        <div class="select-store dropdown tablet-none">
+                            <a href="#" class="btn header-btn dropdown-toggle"><span class="select-store__title">Y!
+                                    Auctions</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-store">
+                                <ul>
+                                    <li class="current"><a href="#">Y! Auctions</a></li>
+                                    <li><a href="#">Y! Shopping</a></li>
+                                    <li><a href="#">Racuten</a></li>
+                                    <li><a href="#">Croooober</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-category tablet-none">
+                            <a href="#" class="btn light-btn js-select-category">
+                                <span class="select-category__title">Все категории</span>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                            </a>
+                            <div class="select-cats-modal">
+                                <div class="select-cats-modal__header">
+                                    <div class="select-cats-modal__header-title">Выберите категорию для поиска</div>
+                                    <button class="select-cats-modal__header-close">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="select-cats-modal__body">
+                                    <ul class="select-cats-modal__list">
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#search"></use>
+                                            </svg><span>Все категории</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#bit-tech"></use>
+                                            </svg><span>Бытовая техника</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#fanats"></use>
+                                            </svg><span>Товары для фанатов</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#beauty"></use>
+                                            </svg><span>Красота и здоровье</span>
+                                        </li>
+
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#gardening"></use>
+                                            </svg><span>Садоводство</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#games"></use>
+                                            </svg><span>Игры и игрушки</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#sport"></use>
+                                            </svg><span>Спорт и отдых</span>
+                                        </li>
+                                        <li class="select-cats-modal__item">
+                                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                                <use href="sprite.svg#hobby"></use>
+                                            </svg><span>Хобби и увлечения</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="search-form">
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="tablet-only">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                            <input type="text" name="search"
+                                placeholder="Модель кузова, поисковое слово или номер лота">
+                            <button class="btn header-btn tablet-none">
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#search"></use>
+                                </svg>
+                                <span>Найти</span></button>
+                        </form>
+                    </div>
+                    <div class="mobile-menu__trigger tablet-only">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#burger"></use>
+                        </svg>
+                    </div>
+                    <div class="header-btns">
+                        <a href="#" class="header-btns__item">
+                            <svg viewBox="0 0 25 24" width="25" height="24">
+                                <use href="sprite.svg#support"></use>
+                            </svg>
+                            <span>Поддержка</span>
+                        </a>
+                        <div class="header-btns__item header-btns__notes">
+                            <div class="notes-btn">
+                                <div class="header-btns__icon">
+                                    <svg viewBox="0 0 25 24" width="25" height="24">
+                                        <use href="/sprite.svg#notes"></use>
+                                    </svg>
+                                    <span>10</span>
+                                </div>
+                                <span>Уведомления</span>
+                            </div>
+
+                            <div class="notes-tooltip">
+                                <div class="notes-title">
+                                    <strong>Уведомления <span>(5)</span></strong>
+                                    <button class="notes-close tablet-only">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <use href="sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="notes-body">
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item unread">
+                                        <div class="notes-text">
+                                            <p>Новое уведомление непрочитанное</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                    <div class="notes-item">
+                                        <div class="notes-text">
+                                            <p>Прочитанное не новое уведомление</p>
+                                            <a href="#" class="action-link">Addition link</a>
+                                        </div>
+                                        <div class="notes-date">
+                                            <span>17.07.25, 16:30</span>
+                                            <span class="notes-unread"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="header-btns__item header-btns__profile current">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="sprite.svg#profile"></use>
+                            </svg>
+                            <span>Профиль</span>
+                        </a>
+                        <a href="#" class="header-btns__item">
+                            <div class="header-btns__icon">
+                                <svg viewBox="0 0 25 24" width="25" height="24">
+                                    <use href="/sprite.svg#cart"></use>
+                                </svg>
+                                <span>2</span>
+                            </div>
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                    <a href="#" class="btn header-btn login-btn tablet-none">Войти</a>
+                </div>
+                <div class="modal-header-overlay"></div>
+            </div>
+            <div class="header__third-row tablet-none">
+                <div class="d-flex">
+                    <nav class="cats-menu">
+                        <ul class="menu">
+                            <li class="has-child"><a href="#" class="menu__item">Автозапчасти</a>
+                                <svg viewBox="0 0 16 16" width="16" height="16">
+                                    <use href="sprite.svg#shevron-down"></use>
+                                </svg>
+                                <ul class="submenu">
+                                    <li><a href="#" class="menu__item">Поиск на аукционе</a></li>
+                                    <li><a href="#" class="menu__item">Заказ новых запчастей</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu__item">Шины и диски</a></li>
+                            <li><a href="#" class="menu__item">Мототехника</a></li>
+                            <li class="menu__item menu__item--more">
+                                <span class="menu-more-title">Еще</span>
+                                <ul class="mobile-submenu menu">
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Спорт и отдых</a>
+                                    </li>
+                                    <li class="mobile-submenu-item"><a href="#" class="menu__item">Аниме товары</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="#" class="menu__item">Спорт и отдых</a></li>
+                            <li><a href="#" class="menu__item">Аниме товары</a></li> -->
+                        </ul>
+                    </nav>
+                    <nav class="stores-menu">
+                        <ul class="menu">
+                            <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                            <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                            <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                            <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                            <li><a href="#" class="menu__item">Другие магазины</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-menu tablet-only">
+                <div class="mobile-menu__head">
+                    <a href="#" class="mobile-menu__logo">
+                        <img src="img/Tanuki.svg" alt="">
+                    </a>
+                    <a href="#" class="mobile-menu__user">
+                        <img src="img/ava.svg" alt="" class="mobile-menu__avatar">
+                        <span class="mobile-menu__name">Константин</span>
+                    </a>
+                    <a href="#" class="btn header-btn login-btn">Войти</a>
+                    <button class="mobile-menu__close">
+                        <svg viewBox="0 0 16 16" width="16" height="16">
+                            <use href="sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="">
+                    <ul class="">
+                        <li><a href="#" class="menu__item menu__item-auctions">Y! Auctions</a></li>
+                        <li><a href="#" class="menu__item menu__item-yohoo">Y! Shopping</a></li>
+                        <li><a href="#" class="menu__item menu__item-racuten">Racuten</a></li>
+                        <li><a href="#" class="menu__item menu__item-sale">Распродажа</a></li>
+                        <li><a href="#" class="menu__item">Другие магазины</a></li>
+                    </ul>
+                </nav>
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="menu__item">О компании</a></li>
+                        <li><a href="#" class="menu__item">Стоимость</a></li>
+                        <li><a href="#" class="menu__item">Доставка</a></li>
+                        <li><a href="#" class="menu__item">Контакты</a></li>
+                        <li><a href="#" class="menu__item menu__item-highlighted">Авто из Японии</a></li>
+                        <li><a href="#" class="menu__item">Поддержка</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__bottom">
+                    <div class="exch-rate">
+                        <span>1$ = 144.78¥</span>
+                        <span>100¥ = 68.75Р</span>
+                    </div>
+                    <div class="wallet">
+                        <strong>Кошелек</strong>
+                        <div class="wallet__balance">10,300 RUB</div>
+                    </div>
+                    <div class="mobile-menu__language">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Язык</strong>
+                            <span>Русский</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Язык</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li class="current"><a href="#">Russian (Русский)</a></li>
+                                <li><a href="#">English (English)</a></li>
+                                <li><a href="#">Chinese (中文)</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu__currency">
+                        <div class="mobile-menu__dropdown-toggle">
+                            <strong>Валюта</strong>
+                            <span>RUB</span>
+                        </div>
+                        <div class="mobile-menu__dropdown">
+                            <div class="mobile-menu__dropdown-head">
+                                <strong>Валюта</strong>
+                                <button class="mobile-menu__close">
+                                    <svg viewBox="0 0 16 16" width="16" height="16">
+                                        <use href="sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li><a href="#">¥ JPY</a></li>
+                                <li class="current"><a href="#">₽ RUB</a></li>
+                                <li><a href="#">$ USD</a></li>
+                                <li><a href="#">元 CNY</a></li>
+                                <li><a href="#">€ EUR</a></li>
+                            </ul>
+                            <button class="btn main-btn">Готово</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__overlay"></div>
+            </div>
+        </header>
+
+        <main class="">
+
+            <ul class="breadcrumbs">
+                <li><a href="#">Моя страница</a></li>
+                <li class="current-item"><span>Справочник</span></li>
+            </ul>
+
+            <div class="blogpages">
+                <div class="guide__wrap">
+                    <div class="guide__title">
+                        <div>
+                            <h1>Справочник</h1>
+                            <p>Здесь вы найдете ответы на главные вопросы о работе сервиса, оплате, доставке и санкциях
+                                для
+                                удобных покупок из Японии</p>
+                        </div>
+                        <div class="guide__title-note">Если вы не нашли ответ на ваш вопрос, вы можете отправить нам
+                            запрос
+                            <a href="#" class="btn brand-btn">Служба поддержки</a>
+                        </div>
+                    </div>
+                    <section class="guide">
+                        <div class="guide__filters-wrap">
+                            <div class="guide__filters">
+                                <button class="guide__filter active" data-filter="all">Все <span>42</span></button>
+                                <button class="guide__filter" data-filter="auctions">Аукционы <span>12</span></button>
+                                <button class="guide__filter" data-filter="stores">Магазины Yahoo Shopping, Rakuten
+                                    <span>4</span></button>
+                                <button class="guide__filter" data-filter="faq">FAQ <span>11</span></button>
+                                <button class="guide__filter" data-filter="payment">Оплата <span>6</span></button>
+                                <button class="guide__filter" data-filter="delivery">Способы доставки
+                                    <span>9</span></button>
+                            </div>
+                        </div>
+                        <div class="guide__sections">
+
+                            <div class="guide__section" data-section="auctions">
+                                <h2>Аукционы</h2>
+                                <div class="guide__articles">
+                                    <a href="#" class="guide__article">
+                                        Неактивна кнопка сделать ставку
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Утилизация товара
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Взаимные торги между клиентами (внутренний аукцион)
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Ограничения на покупку гитар
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Я выиграл! Что дальше?
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Как принять участие в аукционе?
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Что такое японские онлайн-аукционы Yahoo Auctions?
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Моя ставка перебивается
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Минимальный шаг ставки
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Аукционы с автопродлением
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Особенности автоматического перевода
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Обновление информации о лидере
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Уточняющие вопросы о товаре
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Что такое блиц-цена?
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Покупка трактора на аукционе
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Покупка мотоцикла/скутера
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="guide__section" data-section="stores">
+                                <h2>Магазины Yahoo Shopping, Rakuten</h2>
+                                <div class="guide__articles">
+                                    <a href="#" class="guide__article">Покупка товара из прочих магазинов Японии
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">В корзине уменьшилось количество товара
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">Покупки из интернет-магазинов Японии
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">Товар пропал из корзины
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="guide__section" data-section="faq">
+                                <h2>FAQ</h2>
+                                <div class="guide__articles">
+                                    <a href="#" class="guide__article">
+                                        Санкционные товары
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Дополнительные услуги
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Схема работы
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Условия оказания услуг
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Объединение заказов в одну посылку
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Что такое Instapak?
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Покупка автозапчастей
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Покупка автомобилей из Японии в Россию
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Новые санкции с 23 января 2025 года
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Сколько стоит доставка?
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Правила обработки посылок на складе
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="guide__section" data-section="payment">
+                                <h2>Оплата</h2>
+                                <div class="guide__articles">
+                                    <a href="#" class="guide__article">
+                                        Плата за хранение товара
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Пополнение баланса
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Комиссия Tanukishop
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Пополнение баланса банковским переводом
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Пополнение баланса криптовалютой (USDT)
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Вывод средств
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="guide__section" data-section="delivery">
+                                <h2>Способы доставки</h2>
+                                <div class="guide__articles">
+                                    <a href="#" class="guide__article">
+                                        Совместная доставка товаров по Японии
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Доставка почтой электроники с батареями
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Ограничения по размеру и весу для почтовых отправок в разные страны
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Можете ли вы занизить стоимость товара при почтовой отправке?
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Почта нестандартного размера (когда доставка по Японии стоит дороже, чем было
+                                        указано у продавца)
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Доставка товаров в Россию
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Сравнение способов доставки
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Отслеживание посылки
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="guide__article">
+                                        Запрещенные к отправке товары
+                                        <svg width="16" height="16" viewBox="0 0 16 16">
+                                            <use href="sprite.svg#shevron-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__col footer__col-first">
+                    <a href="#" class="footer__logo"><img src="img/logo-full.png" alt=""></a>
+                    <div class="footer__payment-systems">
+                        <img src="img/PayPal-logo.svg" alt="">
+                        <div class="d-flex">
+                            <img src="img/visa.svg" alt="">
+                            <img src="img/master.svg" alt="">
+                            <img src="img/amex.svg" alt="">
+                            <img src="img/discover.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer__store-logos">
+                        <img src="img/yahoo-logo.svg" alt="">
+                        <img src="img/rakuten-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Компания</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Условия предоставления услуги</a></li>
+                        <li><a href="#">Политика конфиденцальности</a></li>
+                        <li><a href="#">Политика возвратов</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Личный кабинет</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Моя страница</a></li>
+                        <li><a href="#">Мой аукцион</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Посылки</a></li>
+                        <li><a href="#">Служба поддержки</a></li>
+                    </ul>
+                    <hr>
+                    <h5 class="footer__col-title">Сервисы</h5>
+                    <ul class="footer__menu footer-accordion">
+                        <li><a href="#">Калькулятор доставки</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Контакты</h5>
+                    <div class="footer-accordion">
+                        <div class="footer__contacts">
+                            <p>Onteco Co., Ltd. - Tanuki Shop International Sales </p>
+                            <address>Address: 939-0304, Japan, Toyama prefecture, Imizu, Kosugi Shiraishi 638
+                            </address>
+                            <div class="d-flex">
+                                <div><span>Центр поддержки клиентов</span></div>
+                                <div>
+                                    <span>9:00 – 18:00</span>
+                                    <small>время по Японии</small>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="footer__divider"></span>
+                        <div class="footer__telegram">
+                            <small>Только для сообщений</small>
+                            <dl>
+                                <dt><img src="img/telegram.svg" alt=""> Telegram</dt>
+                                <dd>
+                                    <a href="#">+81 80-4380-1212</a>
+                                    <small>вопросы обработки посылок, отправок</small>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright">Copyright © 2025 Tanukishop.com. All Rights Reserved. Company registration number:
+                    3230001014477</p>
+                <a href="#" target="_blank"><img src="img/insta.svg" alt=""></a>
+            </div>
+        </footer>
+
+        <div class="mobile-nav tablet-only">
+            <nav class="d-flex">
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#home"></use>
+                    </svg>
+                    <span>Главная</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#auction"></use>
+                    </svg>
+                    <span>Аукционы</span>
+                </a>
+                <a href="#" class="mobile-nav__item">
+                    <svg viewBox="0 0 25 24" width="25" height="24">
+                        <use href="sprite.svg#cart"></use>
+                    </svg>
+                    <span>Корзина</span>
+                </a>
+                <div class="mobile-nav__item notes-trigger">
+                    <div class="header-btns__icon">
+                        <svg viewBox="0 0 25 24" width="25" height="24">
+                            <use href="/sprite.svg#notes"></use>
+                        </svg>
+                        <span>6</span>
+                    </div>
+                    <span>Уведомления</span>
+                </div>
+                <a href="#" class="mobile-nav__item mobile-nav__login">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Войти</span>
+                </a>
+                <a href="#" class="mobile-nav__item mobile-nav__profile">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <use href="sprite.svg#profile"></use>
+                    </svg>
+                    <span>Профиль</span>
+                </a>
+            </nav>
+        </div>
+
+    </div>
+    <div class="modal-overlay"></div>
+    <div class="mobile-search-modal">
+        <div class="mobile-search-modal__header">
+            <button class="mobile-search-modal__back">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use href="sprite.svg#arr-left"></use>
+                </svg>
+            </button>
+            <form class="mobile-search-modal__form">
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <use href="sprite.svg#search"></use>
+                </svg>
+                <input type="text" id="mobile-search-input" placeholder="Найти товары" autofocus>
+            </form>
+        </div>
+        <div class="mobile-search-modal__content">
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus only-auth">
+                <div class="mobile-search-modal__title">Вы искали</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Мотоциклы аукцион
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Японская косметика оптом
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Часы Seiko бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Диски на авто с аукциона
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                    <li>
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16">
+                                <use href="sprite.svg#searched"></use>
+                            </svg></span>
+                        Фотоаппараты Canon бу
+                        <button class="mobile-search-modal__remove"><svg width="16" height="16">
+                                <use href="sprite.svg#close"></use>
+                            </svg></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__nofocus">
+                <div class="mobile-search-modal__title">Часто ищут</div>
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        iPhone б/у Япония
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Casio G-Shock оригинал аукцион
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Роботы-пылесос с аукциона
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Лот японская посуда
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Шины бу Япония
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-search-modal__section mobile-search-modal__focus">
+                <ul class="mobile-search-modal__list">
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>аукцион Япония</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>под заказ из Японии</b>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use href="sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                        Мотоциклы <b>с пробегом Япония</b>
+                    </li>
+                </ul>
+                <div class="mobile-search-modal__title">Перейти в раздел</div>
+                <div class="mobile-search-modal__parts">
+                    <div class="mobile-search-modal__categories">
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Автомобили</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Мотоциклы</span>
+                        </a>
+                        <a href="#" class="search-category">
+                            <div class="cats-item__image">
+                                <img src="img/cats/bulb.svg" alt="">
+                            </div>
+                            <span>Запчасти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="totop">
+        <svg width="20" height="20" viewBox="0 0 20 20">
+            <use href="sprite.svg#arrow"></use>
+        </svg>
+    </div>
+    <div class="cookies-note d-flex">
+        <img src="img/Info.svg" alt="">
+        <div>
+            <p>Мы используем <a href="#">cookies</a>, чтобы сохранять ваш поиск, рекомендовать
+                полезное и создавать другие удобства на сайте</p>
+            <button type="button" class="cookies-note__agree">Ок</button>
+        </div>
+        <button class="cookies-note__close">
+            <svg viewBox="0 0 16 16" width="16" height="16">
+                <use href="sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
